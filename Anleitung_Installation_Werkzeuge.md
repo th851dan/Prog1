@@ -2,7 +2,9 @@
 Datum: 02.04.2020
 
 ## 1. Java Development Kit (JDK)
+
 ### Herunterladen und entpacken
+
 1. Rufen Sie folgende Seite auf, um das JDK herunter zu laden: https://jdk.java.net/  
 2. Öffnen Sie die Seite der aktuellen Version. Diese wird bei `Ready for use` genannt. (aktuell: JDK 14) 
 3. Unter `Builds` finden Sie das Archiv zum Download. Klicken Sie auf `zip`, hinter `Windows/x64` um den 
@@ -13,8 +15,10 @@ einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer Fens
 anschließend den Ordner `jdk-14` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
 
 ### Umgebungsvraiablen setzen
+
 Damit das JDK in der Console und von anderen Programmen gefunden werden kann, muss der Speicherort durch
 Umgebungsvraiablen bekannt gemacht werden.  
+
 5. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvraiablen`. Wählen Sie den Vorschlag
 `Umgebungsvariablen für dieses Konto bearbeiten`. Es öffnet sich ein Fenster, in dem Sie die 
 Umgebungsvariablen bearbeiten können.
@@ -27,6 +31,7 @@ Es öffnet sich ein weiteres Fenster, in dem Sie den Inhalt der Path-Variable be
 9. Klicken Sie auch im Fenster `Umgebungsvariablen` auf `Ok`.
 
 ### Test
+
 10. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
 11. Geben Sie ein: `java -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
