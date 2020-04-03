@@ -14,7 +14,7 @@ anschließend den Ordner `jdk-14` mit der Maus in Ihr Homeverzeichnis hinüber z
 
 ### Umgebungsvraiablen setzen
 Damit das JDK in der Console und von anderen Programmen gefunden werden kann, muss der Speicherort durch
-Umgebungsvraiablen bekannt gemacht werden.
+Umgebungsvraiablen bekannt gemacht werden.  
 4. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvraiablen`. Wählen Sie den Vorschlag
 `Umgebungsvariablen für dieses Konto bearbeiten`. Es öffnet sich ein Fenster, in dem Sie die 
 Umgebungsvariablen bearbeiten können.
