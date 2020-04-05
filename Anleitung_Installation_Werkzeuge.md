@@ -116,7 +116,26 @@ geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
 Artistic Style Version 3.
 ```
 
-## 4. checkstyle
+## 4. checkstyle 
 
+### Herunterladen und entpacken
+
+1. Rufen Sie folgende Seite auf: https://github.com/checkstyle/checkstyle/releases/ . Die aktuellste 
+Version steht an oberster Stelle (momentan: 8.31). Klicken Sie unter `Assets` auf 
+`checkstyle-8.31-all.jar`, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner zum 
+Beispiel unter `Downloads`.
+3. Legen Sie in Ihrem Homeverzeichnis einen neuen Ordner mit dem Name `Checkstyle` an. Verschieben Sie 
+die Datei `checkstyle-8.31-all.jar` aus `Downloads` in diesen neuen Ordner.
+
+### Test
+
+9. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
+geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console. Wechseln Sie in das 
+Verzeichnis Checkstyle mit folgender Anweisung: `cd C:\Users\USERNAME\Checkstyle`
+10. Geben Sie ein: `java -jar checkstyle-8.31-all.jar --version`. Wenn Sie alles richtig gemacht haben 
+erscheint nun folgender Text: 
+```
+Checkstyle version: 8.31
+```
 
 ## 5. spotbugs
