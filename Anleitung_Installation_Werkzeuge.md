@@ -81,3 +81,12 @@ geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
 Apache Ant(TM) version 1.10.7 compiled on September 1 2019
 ```
 12. Geben Sie nun `%ANT_HOME%\bin\ant -version` ein. Sie sollten die gleiche ausgabe erhalten.
+
+
+## 3. Artistic Style (astyle)
+
+
+## 4. checkstyle
+
+
+## 5. spotbugs
