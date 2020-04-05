@@ -1,9 +1,13 @@
-# Anleitung: Installation der Werkzeuge unter Windows 10
+# Anleitung Installation und Einrichtung der Wekrzeuge
+
+für Windows 10
 Datum: 02.04.2020
 
-## 1. Java Development Kit (JDK)
+## Installation 
 
-### Herunterladen und entpacken
+### 1. Java Development Kit (JDK)
+
+#### Herunterladen und entpacken
 
 1. Rufen Sie folgende Seite auf, um das JDK herunter zu laden: https://jdk.java.net/  
 2. Öffnen Sie die Seite der aktuellen Version. Diese wird bei `Ready for use` genannt. (aktuell: JDK 14) 
@@ -14,7 +18,7 @@ Ordner `jdk-14`. Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USER
 einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer Fenster öffnen und
 anschließend den Ordner `jdk-14` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
 
-### Umgebungsvraiablen setzen
+#### Umgebungsvraiablen setzen
 
 Damit das JDK in der Console und von anderen Programmen gefunden werden kann, muss der Speicherort durch
 Umgebungsvraiablen bekannt gemacht werden.  
@@ -30,7 +34,7 @@ Es öffnet sich ein weiteres Fenster, in dem Sie den Inhalt der Path-Variable be
 `JAVA_HOME` als Name und `C:\Users\USERNAME\jdk-14\` als Wert der Variable ein und klicken Sie auf `Ok`.
 9. Klicken Sie auch im Fenster `Umgebungsvariablen` auf `Ok`.
 
-### Test
+#### Test
 
 10. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
@@ -43,9 +47,9 @@ OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)
 12. Geben Sie nun `%JAVA_HOME%\bin\java -version` ein. Sie sollten die gleiche ausgabe erhalten.
 
 
-## 2. Ant
+### 2. Ant
 
-### Herunterladen und entpacken
+#### Herunterladen und entpacken
 
 1. Rufen Sie folgende Seite auf: https://ant.apache.org/bindownload.cgi  
 2. Unter `Current Release of Ant` wird die aktuell Version genannet (momentan: 1.10.7). Klicken Sie auf 
@@ -56,7 +60,7 @@ Ordner `apache-ant-1.10.7`. Entpacken Sie diesen in Ihr Homeverzeichnis unter C:
 können Sie einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer Fenster öffnen 
 und anschließend den Ordner `apache-ant-1.10.7` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
 
-### Umgebungsvraiablen setzen
+#### Umgebungsvraiablen setzen
 
 Damit Ant in der Console und von anderen Programmen gefunden werden kann, muss der Speicherort durch
 Umgebungsvraiablen bekannt gemacht werden.  
@@ -73,7 +77,7 @@ Sie auf `Ok`.
 auf `Ok`.
 8. Klicken Sie auch im Fenster `Umgebungsvariablen` auf `Ok`.
 
-### Test
+#### Test
 
 9. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
@@ -84,9 +88,9 @@ Apache Ant(TM) version 1.10.7 compiled on September 1 2019
 11. Geben Sie nun `%ANT_HOME%\bin\ant -version` ein. Sie sollten die gleiche ausgabe erhalten.
 
 
-## 3. Artistic Style (astyle) 
+### 3. Artistic Style (astyle) 
 
-### Herunterladen und entpacken
+#### Herunterladen und entpacken
 
 1. Rufen Sie folgende Seite auf: https://sourceforge.net/projects/astyle/files/ . Klicken Sie auf 
 `Download Latest Version`, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner zum 
@@ -96,7 +100,7 @@ Ordner `AStyle`. Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USER
 können Sie einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer Fenster öffnen und
 anschließend den Ordner `AStyle` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
 
-### Umgebungsvraiablen setzen
+#### Umgebungsvraiablen setzen
 
 3. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvraiablen`. Wählen Sie den Vorschlag
 `Umgebungsvariablen für dieses Konto bearbeiten`. Es öffnet sich ein Fenster, in dem Sie die 
@@ -107,7 +111,7 @@ Es öffnet sich ein weiteres Fenster, in dem Sie den Inhalt der Path-Variable be
 Sie auf `Ok`.
 6. Klicken Sie auch im Fenster `Umgebungsvariablen` auf `Ok`.
 
-### Test
+#### Test
 
 7. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
@@ -116,9 +120,9 @@ geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
 Artistic Style Version 3.
 ```
 
-## 4. checkstyle 
+### 4. checkstyle 
 
-### Herunterladen und entpacken
+#### Herunterladen und entpacken
 
 1. Rufen Sie folgende Seite auf: https://github.com/checkstyle/checkstyle/releases/ . Die aktuellste 
 Version steht an oberster Stelle (momentan: 8.31). Klicken Sie unter `Assets` auf 
@@ -127,7 +131,7 @@ Beispiel unter `Downloads`.
 2. Legen Sie in Ihrem Homeverzeichnis einen neuen Ordner mit dem Name `Checkstyle` an. Verschieben Sie 
 die Datei `checkstyle-8.31-all.jar` aus `Downloads` in diesen neuen Ordner.
 
-### Test
+#### Test
 
 3. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console. Wechseln Sie in das 
@@ -138,9 +142,9 @@ erscheint nun folgender Text:
 Checkstyle version: 8.31
 ```
 
-## 5. spotbugs
+### 5. spotbugs
 
-### Herunterladen und entpacken
+#### Herunterladen und entpacken
 
 1. Rufen Sie folgende Seite auf: https://spotbugs.readthedocs.io/en/stable/installing.html . Die 
 Klicken Sie im ersten Abschnitt auf den Link `zip-format`, um den Download zu starten. Speichern Sie das 
@@ -150,7 +154,7 @@ Ordner `spotbugs-4.0.1`. Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Us
 können Sie einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer Fenster öffnen und
 anschließend den Ordner `spotbugs-4.0.1` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
 
-### Test
+#### Test
 
 3. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
@@ -177,4 +181,38 @@ General options:
   -jvmArgs args    Pass args to JVM
   -maxHeap size    Maximum Java heap size in megabytes (default=768)
   -javahome <dir>  Specify location of JRE
+```
+
+## Einrichtung der Einstiegsaufgabe
+
+#### Anlegen des Arbeitsverzeichnis und herunterladen der Einstiegsaufgabe
+
+1. Erstellen Sie ein Arbeitsverzeichnis um Ihre Übungsaufgaben abzuspeichern. Legen Sie dieses Verzeichnis beispielsweise in Ihrem Homeverzeichnis an und vergeben Sie den Namen `prog1-uebungen`.
+2. Laden Sie das Archiv `Einstieg-zuhause.jar` unter dem Link www-home.htwg-konstanz.de/~drachen/prog1/Einstieg-zuhause.jar herunter und speichern Sie dieses in Ihrem Arbeitsverzeichnis.
+3. Entpacken Sie das Archiv, in dem Sie eine Konsole öffnen und mit `cd` in Ihr Arbeitsverzeichnis wechseln. Führen Sie dann den Konsolenbefehl `jar xf Einstieg-zuhause.jar` aus.
+
+#### Anpassen der build.xml Datei
+
+Damit Ant die Werkzeuge finden kann, müssen diese in der build.xml Datei bekannt gemacht werden.
+
+4. Öffnen Sie die Datei build.xml in einem Text Editor.
+5. Geben Sie den Pfad zu Checkstyle und Sportbugs in den entsprechenden Eigenschaften an. Wenn Sie die Wekrkzeuge wie in der Anleitung vorgeschlagen installiert haben können Sie folgende Anpassungen vornehmen:  
+Ändern Sie folgende Zeilen von
+```
+    <property name="checkstyle.dir" value="c:/checkstyle/"/>
+    <property name="checkstyle.jar" value="${checkstyle.dir}checkstyle-8.30-all.jar"/>
+```
+zu
+```
+    <property name="checkstyle.dir" value="C:/Users/USERNAME/Checkstyle/"/>
+    <property name="checkstyle.jar" value="${checkstyle.dir}checkstyle-8.31-all.jar"/>
+```
+Und diese Zeile
+```
+    <property name="spotbugs.home" value="c:/spotbugs-4.0.1/"/>
+```
+
+zu 
+```
+    <property name="spotbugs.home" value="C:/Users/USERNAME/spotbugs-4.0.1/"/>
 ```
