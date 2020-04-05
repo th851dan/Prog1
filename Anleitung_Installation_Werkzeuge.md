@@ -91,27 +91,27 @@ Apache Ant(TM) version 1.10.7 compiled on September 1 2019
 1. Rufen Sie folgende Seite auf: https://sourceforge.net/projects/astyle/files/ . Klicken Sie auf 
 `Download Latest Version`, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner zum 
 Beispiel unter `Downloads`.
-3. Öffnen Sie das die Datei `ASytle_3.1_windows.zip` mit einem Doppelklick. Das Archiv enthält den 
+2. Öffnen Sie das die Datei `ASytle_3.1_windows.zip` mit einem Doppelklick. Das Archiv enthält den 
 Ordner `AStyle`. Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USERNAME. Dies 
 können Sie einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer Fenster öffnen und
 anschließend den Ordner `AStyle` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
 
 ### Umgebungsvraiablen setzen
 
-4. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvraiablen`. Wählen Sie den Vorschlag
+3. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvraiablen`. Wählen Sie den Vorschlag
 `Umgebungsvariablen für dieses Konto bearbeiten`. Es öffnet sich ein Fenster, in dem Sie die 
 Umgebungsvariablen bearbeiten können.
-5. Wählen Sie im Oberen Bereich die Variable `Path` aus und klicken Sie anschließend auf `Bearbeiten`. 
+4. Wählen Sie im Oberen Bereich die Variable `Path` aus und klicken Sie anschließend auf `Bearbeiten`. 
 Es öffnet sich ein weiteres Fenster, in dem Sie den Inhalt der Path-Variable bearbeiten können.
-6. Gehen Sie auf `Neu` und tragen Sie folgendes ein: `C:\Users\USERNAME\ASytle\bin`. Klicken 
+5. Gehen Sie auf `Neu` und tragen Sie folgendes ein: `C:\Users\USERNAME\ASytle\bin`. Klicken 
 Sie auf `Ok`.
-7. Klicken Sie auch im Fenster `Umgebungsvariablen` auf `Ok`.
+6. Klicken Sie auch im Fenster `Umgebungsvariablen` auf `Ok`.
 
 ### Test
 
-8. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
+7. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
-9. Geben Sie ein: `astyle --version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
+8. Geben Sie ein: `astyle --version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
 Artistic Style Version 3.
 ```
@@ -124,18 +124,57 @@ Artistic Style Version 3.
 Version steht an oberster Stelle (momentan: 8.31). Klicken Sie unter `Assets` auf 
 `checkstyle-8.31-all.jar`, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner zum 
 Beispiel unter `Downloads`.
-3. Legen Sie in Ihrem Homeverzeichnis einen neuen Ordner mit dem Name `Checkstyle` an. Verschieben Sie 
+2. Legen Sie in Ihrem Homeverzeichnis einen neuen Ordner mit dem Name `Checkstyle` an. Verschieben Sie 
 die Datei `checkstyle-8.31-all.jar` aus `Downloads` in diesen neuen Ordner.
 
 ### Test
 
-9. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
+3. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console. Wechseln Sie in das 
-Verzeichnis Checkstyle mit folgender Anweisung: `cd C:\Users\USERNAME\Checkstyle`
-10. Geben Sie ein: `java -jar checkstyle-8.31-all.jar --version`. Wenn Sie alles richtig gemacht haben 
+Verzeichnis `Checkstyle` mit folgender Anweisung: `cd C:\Users\USERNAME\Checkstyle`
+4. Geben Sie ein: `java -jar checkstyle-8.31-all.jar --version`. Wenn Sie alles richtig gemacht haben 
 erscheint nun folgender Text: 
 ```
 Checkstyle version: 8.31
 ```
 
 ## 5. spotbugs
+
+### Herunterladen und entpacken
+
+1. Rufen Sie folgende Seite auf: https://spotbugs.readthedocs.io/en/stable/installing.html . Die 
+Klicken Sie im ersten Abschnitt auf den Link `zip-format`, um den Download zu starten. Speichern Sie das 
+Archiv auf Ihrem Rechner zum Beispiel unter `Downloads`.
+2. Öffnen Sie das die Datei `spotbugs-4.0.1.zip` mit einem Doppelklick. Das Archiv enthält den 
+Ordner `spotbugs-4.0.1`. Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USERNAME. Dies 
+können Sie einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer Fenster öffnen und
+anschließend den Ordner `spotbugs-4.0.1` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
+
+### Test
+
+3. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
+geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
+4. Geben Sie ein: `C:\Users\USERNAME\spotbugs-4.0.1\bin\spotbugs -help`. Wenn Sie alles richtig gemacht haben 
+erscheint nun folgender Text: 
+```
+SpotBugs version 4.0.1, https://spotbugs.github.io/
+Command line options
+fb analyze                   Perform SpotBugs Analysis
+fb errors                    List analysis errors stored in results file
+fb filter                    Filter analysis results
+fb gui                       Launch SpotBugs GUI
+fb help                      Provide help for commands
+fb list                      Convert analysis results to textual form
+fb set                       Set project configuration/options
+fb version                   List SpotBugs version
+fb history      history      List details from multi-version analysis results
+fb merge        history      Combine analysis results from different versions of software to produce multi-version analysis results
+fb union        history      Merge analysis results from disjoint components
+fb addMessages  poweruser    Add msgs (e.g., textual descriptions of bugs) to analysis results
+fb dis          utility      Disassemble a class file
+
+General options:
+  -jvmArgs args    Pass args to JVM
+  -maxHeap size    Maximum Java heap size in megabytes (default=768)
+  -javahome <dir>  Specify location of JRE
+```
