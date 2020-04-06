@@ -1,6 +1,6 @@
 # Anleitung Installation und Einrichtung der Wekrzeuge
 
-für Windows 10
+für Windows 10  
 Datum: 02.04.2020
 
 ## Installation 
@@ -9,19 +9,16 @@ Datum: 02.04.2020
 
 #### Herunterladen und entpacken
 
-1. Rufen Sie folgende Seite auf, um das JDK herunter zu laden: https://jdk.java.net/  
+1. Rufen Sie folgende Seite auf, um das JDK herunter zu laden: https://jdk.java.net 
 2. Öffnen Sie die Seite der aktuellen Version. Diese wird bei `Ready for use` genannt. (aktuell: JDK 14) 
 3. Unter `Builds` finden Sie das Archiv zum Download. Klicken Sie auf `zip`, hinter `Windows/x64` um den 
 Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner, z.B. unter Downloads.
-4. Öffnen Sie das die Datei openjdk-14_windows-x64_bin.zip mit einem Doppelklick. Das Archiv enthält den 
+4. Öffnen Sie das die Datei `openjdk-14_windows-x64_bin.zip` mit einem Doppelklick. Das Archiv enthält den 
 Ordner `jdk-14`. Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USERNAME. Dies können Sie 
 einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer Fenster öffnen und
 anschließend den Ordner `jdk-14` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
 
 #### Umgebungsvraiablen setzen
-
-Damit das JDK in der Console und von anderen Programmen gefunden werden kann, muss der Speicherort durch
-Umgebungsvraiablen bekannt gemacht werden.  
 
 5. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvraiablen`. Wählen Sie den Vorschlag
 `Umgebungsvariablen für dieses Konto bearbeiten`. Es öffnet sich ein Fenster, in dem Sie die 
@@ -51,7 +48,7 @@ OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)
 
 #### Herunterladen und entpacken
 
-1. Rufen Sie folgende Seite auf: https://ant.apache.org/bindownload.cgi  
+1. Rufen Sie folgende Seite auf: https://ant.apache.org/bindownload.cgi
 2. Unter `Current Release of Ant` wird die aktuell Version genannet (momentan: 1.10.7). Klicken Sie auf 
 den link mit der .zip Endung, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner 
 zum Beispiel unter `Downloads`.
@@ -61,9 +58,6 @@ können Sie einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten E
 und anschließend den Ordner `apache-ant-1.10.7` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
 
 #### Umgebungsvraiablen setzen
-
-Damit Ant in der Console und von anderen Programmen gefunden werden kann, muss der Speicherort durch
-Umgebungsvraiablen bekannt gemacht werden.  
 
 4. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvraiablen`. Wählen Sie den Vorschlag
 `Umgebungsvariablen für dieses Konto bearbeiten`. Es öffnet sich ein Fenster, in dem Sie die 
@@ -192,8 +186,6 @@ General options:
 3. Entpacken Sie das Archiv, in dem Sie eine Konsole öffnen und mit `cd` in Ihr Arbeitsverzeichnis wechseln. Führen Sie dann den Konsolenbefehl `jar xf Einstieg-zuhause.jar` aus.
 
 #### Anpassen der build.xml Datei
-
-Damit Ant die Werkzeuge finden kann, müssen diese in der build.xml Datei bekannt gemacht werden.
 
 4. Öffnen Sie die Datei build.xml in einem Text Editor.
 5. Geben Sie den Pfad zu Checkstyle und Sportbugs in den entsprechenden Eigenschaften an. Wenn Sie die Wekrkzeuge wie in der Anleitung vorgeschlagen installiert haben können Sie folgende Anpassungen vornehmen:  
