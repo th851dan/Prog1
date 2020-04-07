@@ -32,7 +32,7 @@ Es öffnet sich ein weiteres Fenster, in dem Sie den Inhalt der Path-Variable be
 #### Test
 
 9. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
-geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
+geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Konsole.
 10. Geben Sie ein: `java -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
 openjdk version `14` 2020-03-17
@@ -66,7 +66,7 @@ Sie auf `Ok`.
 #### Test
 
 8. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
-geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
+geben Sie `cmd` ein und bestätigen mit Enter.
 9. Geben Sie ein: `ant -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
 Apache Ant(TM) version 1.10.7 compiled on September 1 2019
@@ -98,7 +98,7 @@ Sie auf `Ok`.
 #### Test
 
 7. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
-geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
+geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Konsole.
 8. Geben Sie ein: `astyle --version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
 Artistic Style Version 3.1
@@ -118,7 +118,7 @@ die Datei `checkstyle-8.31-all.jar` aus `Downloads` in diesen neuen Ordner.
 #### Test
 
 3. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
-geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console. Wechseln Sie in das 
+geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Konsole. Wechseln Sie in das 
 Verzeichnis `Checkstyle` mit folgender Anweisung: `cd C:\Checkstyle`
 4. Geben Sie ein: `java -jar checkstyle-8.31-all.jar --version`. Wenn Sie alles richtig gemacht haben 
 erscheint nun folgender Text: 
@@ -139,7 +139,7 @@ Ordner `spotbugs-4.0.1`. Entpacken Sie diesen Ordner nach  `C:\`.
 #### Test
 
 3. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
-geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
+geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Konsole.
 4. Geben Sie ein: `C:\spotbugs-4.0.1\bin\spotbugs -help`. Wenn Sie alles richtig gemacht haben 
 erscheint nun folgender Text: 
 ```
@@ -185,7 +185,7 @@ vorherigen Abschnitten beschrieben.
 #### Test
 
 3. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen`
-geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console. Geben Sie folgende Anweisung 
+geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Konsole. Geben Sie folgende Anweisung 
 ein: `notepad++`. Der Editor sollte sich nun in einem neuen Fenster öffnen.
 
 
