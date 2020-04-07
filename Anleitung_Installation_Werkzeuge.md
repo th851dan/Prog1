@@ -1,4 +1,4 @@
-# Anleitung Installation und Einrichtung der Werkzeuge
+# Anleitung Installation der Werkzeuge und Einstiegsaufgabe
 
 für Windows 10  
 Datum: 02.04.2020
@@ -178,7 +178,7 @@ Beispiel unter `Downloads`.
 
 #### Umgebungsvraiablen setzen
 
-3. Fügen Sie `C:\Notepad++\` zu Ihrer `Path` Umgebungsvariable hinzu. Gehen Sie dazu vor wie in den 
+3. Fügen Sie `C:\Notepad++\` zu Ihrer `Path` Umgebungsvariable hinzu. Gehen Sie dazu vor, wie in den 
 vorherigen Abschnitten beschrieben.
 
 
@@ -189,7 +189,7 @@ geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console. Gebe
 ein: `notepad++`. Der Editor sollte sich nun in einem neuen Fenster öffnen.
 
 
-## Kennenlernen der Programmierwerkzeuge
+## Kennenlernen der Programmierwerkzeuge - Einstiegsaufgabe
 
 1. Erstellen Sie ein Arbeitsverzeichnis um Ihre Übungsaufgaben abzuspeichern. Legen Sie dieses 
 Verzeichnis beispielsweise unter `C:\` an und vergeb Sie den Namen `prog1-uebungen`.
@@ -204,6 +204,7 @@ Arbeitsverzeichnis wechseln. Führen Sie dann den Konsolenbefehl `jar xf Einstie
 6. Wecheln Sie in der Konsole mit `cd einstieg` in den Ordner `einstieg`. Starten Sie in der Konsole den 
 Editor Notepad++, indem Sie den folgenden Befehl eintippen `notepad++ Einstieg.java`. Geben Sie im 
 Editor das folgende Programm ein. Beenden Sie den Editor und speichern Sie dabei Ihr Programm.
+
 ```java
 //Einstieg.java
 package einstieg;
