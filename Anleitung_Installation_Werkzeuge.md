@@ -14,9 +14,14 @@ Datum: 02.04.2020
 3. Unter `Builds` finden Sie das Archiv zum Download. Klicken Sie auf `zip`, hinter `Windows/x64` um den 
 Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner, z.B. unter Downloads.
 4. Öffnen Sie das die Datei `openjdk-14_windows-x64_bin.zip` mit einem Doppelklick. Das Archiv enthält den 
-Ordner `jdk-14`. Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USERNAME. Dies können Sie 
-einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer Fenster öffnen und
-anschließend den Ordner `jdk-14` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
+Ordner `jdk-14`. Entpacken Sie diesen in das Verzeichnis unter `C:\`. Dies können Sie 
+einfach erledigen, in dem Sie in einem zweiten Explorer Fenster das Verzeichnis `C:\` öffnen und
+anschließend den Ordner `jdk-14` mit der Maus hinüber ziehen. Eventuell werden Sie aufgefordert zu
+bestätigen, dass die tatsächlich den Ordner nach `C:\` verschieben wollen. Wenn Sie auf Ihrem Rechner
+nicht als Administrator angemeldet sind werden Sie aufgefordert das Passwort des Administrators
+einzugeben. Falls Sie keine Aministartor-Rechte auf Ihrem Rechner besitzen, müssen sie das JDK in einen
+anderen Order entpacken, zum Beispiel in Ihr Homeverzeichnis unter `C:\Benutzer\IHR_BENUTZERKONTO\`. In 
+diesem Fall müssen Sie in den folgenden Schritten, den Pfad jeweils anpassen.
 
 #### Umgebungsvraiablen setzen
 
@@ -25,24 +30,20 @@ anschließend den Ordner `jdk-14` mit der Maus in Ihr Homeverzeichnis hinüber z
 Umgebungsvariablen bearbeiten können.
 6. Wählen Sie im Oberen Bereich die Variable `Path` aus und klicken Sie anschließend auf `Bearbeiten`. 
 Es öffnet sich ein weiteres Fenster, in dem Sie den Inhalt der Path-Variable bearbeiten können.
-7. Gehen Sie auf `Neu` und tragen Sie folgendes ein: `C:\Users\USERNAME\jdk-14\bin`. Klicken Sie auf 
+7. Gehen Sie auf `Neu` und tragen Sie folgendes ein: `C:\jdk-14\bin`. Klicken Sie auf 
 `Ok`.
-8. Wählen Sie nun im Fenster `Umgebungsvariablen` wieder im oberen Bereich `Neu...`. Geben Sie bei 
-`JAVA_HOME` als Name und `C:\Users\USERNAME\jdk-14\` als Wert der Variable ein und klicken Sie auf `Ok`.
-9. Klicken Sie auch im Fenster `Umgebungsvariablen` auf `Ok`.
+8. Klicken Sie auch im Fenster `Umgebungsvariablen` auf `Ok`.
 
 #### Test
 
-10. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
+9. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
-11. Geben Sie ein: `java -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
+10. Geben Sie ein: `java -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
 openjdk version `14` 2020-03-17
 OpenJDK Runtime Environment (build 14+36-1461)
 OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)
 ```
-12. Geben Sie nun `%JAVA_HOME%\bin\java -version` ein. Sie sollten die gleiche ausgabe erhalten.
-
 
 ### 2. Ant
 
@@ -50,12 +51,11 @@ OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)
 
 1. Rufen Sie folgende Seite auf: https://ant.apache.org/bindownload.cgi
 2. Unter `Current Release of Ant` wird die aktuell Version genannet (momentan: 1.10.7). Klicken Sie auf 
-den link mit der .zip Endung, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner 
+den link mit der `.zip` Endung, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner 
 zum Beispiel unter `Downloads`.
-3. Öffnen Sie das die Datei apache-ant-1.10.7-bin.zip mit einem Doppelklick. Das Archiv enthält den 
-Ordner `apache-ant-1.10.7`. Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USERNAME. Dies 
-können Sie einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer Fenster öffnen 
-und anschließend den Ordner `apache-ant-1.10.7` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
+3. Öffnen Sie das die Datei `apache-ant-1.10.7-bin.zip` mit einem Doppelklick. Das Archiv enthält den 
+Ordner `apache-ant-1.10.7`. Entpacken Sie diesen ebenfenfalls in das Verzeichnis unter `C:\`. Gehen Sie dabei
+gleich vor, wie beim Entpacken des JDKs im vorherigen Abschnitt.
 
 #### Umgebungsvraiablen setzen
 
@@ -64,22 +64,18 @@ und anschließend den Ordner `apache-ant-1.10.7` mit der Maus in Ihr Homeverzeic
 Umgebungsvariablen bearbeiten können.
 5. Wählen Sie im Oberen Bereich die Variable `Path` aus und klicken Sie anschließend auf `Bearbeiten`. 
 Es öffnet sich ein weiteres Fenster, in dem Sie den Inhalt der Path-Variable bearbeiten können.
-6. Gehen Sie auf `Neu` und tragen Sie folgendes ein: `C:\Users\USERNAME\apache-ant-1.10.7\bin`. Klicken 
+6. Gehen Sie auf `Neu` und tragen Sie folgendes ein: `C:\apache-ant-1.10.7\bin`. Klicken 
 Sie auf `Ok`.
-7. Wählen Sie nun im Fenster `Umgebungsvariablen` wieder im oberen Bereich `Neu...`. Geben Sie bei 
-`ANT_HOME` als Name und `C:\Users\USERNAME\apache-ant-1.10.7\` als Wert der Variable ein und klicken Sie 
-auf `Ok`.
-8. Klicken Sie auch im Fenster `Umgebungsvariablen` auf `Ok`.
+7. Klicken Sie auch im Fenster `Umgebungsvariablen` auf `Ok`.
 
 #### Test
 
-9. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
+8. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
-10. Geben Sie ein: `ant -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
+9. Geben Sie ein: `ant -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
 Apache Ant(TM) version 1.10.7 compiled on September 1 2019
 ```
-11. Geben Sie nun `%ANT_HOME%\bin\ant -version` ein. Sie sollten die gleiche ausgabe erhalten.
 
 
 ### 3. Artistic Style (astyle) 
@@ -90,9 +86,8 @@ Apache Ant(TM) version 1.10.7 compiled on September 1 2019
 `Download Latest Version`, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner zum 
 Beispiel unter `Downloads`.
 2. Öffnen Sie das die Datei `ASytle_3.1_windows.zip` mit einem Doppelklick. Das Archiv enthält den 
-Ordner `AStyle`. Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USERNAME. Dies 
-können Sie einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer Fenster öffnen und
-anschließend den Ordner `AStyle` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
+Ordner `AStyle`. Entpacken Sie diesen in das Verzeichnis unter `C:\. Gehen Sie dabei gleich vor, wie in 
+den vorherigen Abschnitten.
 
 #### Umgebungsvraiablen setzen
 
@@ -101,7 +96,7 @@ anschließend den Ordner `AStyle` mit der Maus in Ihr Homeverzeichnis hinüber z
 Umgebungsvariablen bearbeiten können.
 4. Wählen Sie im Oberen Bereich die Variable `Path` aus und klicken Sie anschließend auf `Bearbeiten`. 
 Es öffnet sich ein weiteres Fenster, in dem Sie den Inhalt der Path-Variable bearbeiten können.
-5. Gehen Sie auf `Neu` und tragen Sie folgendes ein: `C:\Users\USERNAME\ASytle\bin`. Klicken 
+5. Gehen Sie auf `Neu` und tragen Sie folgendes ein: `C:\ASytle\bin`. Klicken 
 Sie auf `Ok`.
 6. Klicken Sie auch im Fenster `Umgebungsvariablen` auf `Ok`.
 
@@ -122,14 +117,14 @@ Artistic Style Version 3.
 Version steht an oberster Stelle (momentan: 8.31). Klicken Sie unter `Assets` auf 
 `checkstyle-8.31-all.jar`, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner zum 
 Beispiel unter `Downloads`.
-2. Legen Sie in Ihrem Homeverzeichnis einen neuen Ordner mit dem Name `Checkstyle` an. Verschieben Sie 
+2. Legen Sie unter `C:\` einen neuen Ordner mit den Namen `Checkstyle` an. Verschieben Sie 
 die Datei `checkstyle-8.31-all.jar` aus `Downloads` in diesen neuen Ordner.
 
 #### Test
 
 3. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console. Wechseln Sie in das 
-Verzeichnis `Checkstyle` mit folgender Anweisung: `cd C:\Users\USERNAME\Checkstyle`
+Verzeichnis `Checkstyle` mit folgender Anweisung: `cd C:\Checkstyle`
 4. Geben Sie ein: `java -jar checkstyle-8.31-all.jar --version`. Wenn Sie alles richtig gemacht haben 
 erscheint nun folgender Text: 
 ```
@@ -144,15 +139,13 @@ Checkstyle version: 8.31
 Klicken Sie im ersten Abschnitt auf den Link `zip-format`, um den Download zu starten. Speichern Sie das 
 Archiv auf Ihrem Rechner zum Beispiel unter `Downloads`.
 2. Öffnen Sie das die Datei `spotbugs-4.0.1.zip` mit einem Doppelklick. Das Archiv enthält den 
-Ordner `spotbugs-4.0.1`. Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USERNAME. Dies 
-können Sie einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer Fenster öffnen und
-anschließend den Ordner `spotbugs-4.0.1` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
+Ordner `spotbugs-4.0.1`. Entpacken Sie diesen Ordner nach  `C:\`.
 
 #### Test
 
 3. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
-4. Geben Sie ein: `C:\Users\USERNAME\spotbugs-4.0.1\bin\spotbugs -help`. Wenn Sie alles richtig gemacht haben 
+4. Geben Sie ein: `C:\spotbugs-4.0.1\bin\spotbugs -help`. Wenn Sie alles richtig gemacht haben 
 erscheint nun folgender Text: 
 ```
 SpotBugs version 4.0.1, https://spotbugs.github.io/
