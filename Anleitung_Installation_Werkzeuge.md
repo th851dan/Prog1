@@ -220,7 +220,7 @@ import java.util.Scanner;
 public final class Einstieg {
 	private Einstieg() { }
 
-	private static final Scanner EINGABE= new Scanner(System.in);
+	private static final Scanner EINGABE = new Scanner(System.in);
 
 	/**
 	 * Die Klassenmethodemain ist der Startpunkt des Programms.
@@ -244,8 +244,8 @@ public final class Einstieg {
 ````
 
 7. Übersetzen Sie Ihr Programm im Terminal mit dem Befehl `javac Einstieg.java`.
-8. Wechseln Sie mit dem cd-Befehl in das Oberverzeichnis von einstieg/, also in das Arbeitsverzeichnis (auf die Leerstelle zwischen cd und .. achten):
-`cd ..`.
+8. Wechseln Sie mit dem cd-Befehl in das Oberverzeichnis von einstieg/, also in das Arbeitsverzeichnis 
+(auf die Leerstelle zwischen cd und .. achten): `cd ..`.
 9. Lassen Sie Ihr Programm laufen mit dem Befehl `java einstieg.Einstieg`. Das Programm fordert Sie auf, 
 Ihren Vornamen sowie die Anzahl Ihrer bisher geschriebenen Java-Programme einzugeben, und gibt 
 anschließend einen Text aus.
