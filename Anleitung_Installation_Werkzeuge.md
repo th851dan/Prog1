@@ -1,4 +1,4 @@
-# Anleitung Installation und Einrichtung der Wekrzeuge
+# Anleitung Installation und Einrichtung der Werkzeuge
 
 für Windows 10  
 Datum: 02.04.2020
@@ -15,20 +15,15 @@ Datum: 02.04.2020
 Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner, z.B. unter Downloads.
 4. Öffnen Sie das die Datei `openjdk-14_windows-x64_bin.zip` mit einem Doppelklick. Das Archiv enthält den 
 Ordner `jdk-14`. Entpacken Sie diesen in das Verzeichnis unter `C:\`. Dies können Sie 
-einfach erledigen, in dem Sie in einem zweiten Explorer Fenster das Verzeichnis `C:\` öffnen und
-anschließend den Ordner `jdk-14` mit der Maus hinüber ziehen. Eventuell werden Sie aufgefordert zu
-bestätigen, dass die tatsächlich den Ordner nach `C:\` verschieben wollen. Wenn Sie auf Ihrem Rechner
-nicht als Administrator angemeldet sind werden Sie aufgefordert das Passwort des Administrators
-einzugeben. Falls Sie keine Aministartor-Rechte auf Ihrem Rechner besitzen, müssen sie das JDK in einen
-anderen Order entpacken, zum Beispiel in Ihr Homeverzeichnis unter `C:\Benutzer\IHR_BENUTZERKONTO\`. In 
-diesem Fall müssen Sie in den folgenden Schritten, den Pfad jeweils anpassen.
+einfach erledigen, in dem Sie in einem zweiten Explorer Fenster das Verzeichnis `C:\` öffnen und 
+anschließend den Ordner `jdk-14` mit der Maus hinüber ziehen.
 
 #### Umgebungsvraiablen setzen
 
 5. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvraiablen`. Wählen Sie den Vorschlag
 `Umgebungsvariablen für dieses Konto bearbeiten`. Es öffnet sich ein Fenster, in dem Sie die 
 Umgebungsvariablen bearbeiten können.
-6. Wählen Sie im Oberen Bereich die Variable `Path` aus und klicken Sie anschließend auf `Bearbeiten`. 
+6. Wählen Sie im oberen Bereich die Variable `Path` aus und klicken Sie anschließend auf `Bearbeiten`. 
 Es öffnet sich ein weiteres Fenster, in dem Sie den Inhalt der Path-Variable bearbeiten können.
 7. Gehen Sie auf `Neu` und tragen Sie folgendes ein: `C:\jdk-14\bin`. Klicken Sie auf 
 `Ok`.
@@ -106,7 +101,7 @@ Sie auf `Ok`.
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
 8. Geben Sie ein: `astyle --version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
-Artistic Style Version 3.
+Artistic Style Version 3.1
 ```
 
 ### 4. checkstyle 
@@ -170,34 +165,96 @@ General options:
   -javahome <dir>  Specify location of JRE
 ```
 
-## Einrichtung der Einstiegsaufgabe
+### 6. Notepad++
 
-#### Anlegen des Arbeitsverzeichnis und herunterladen der Einstiegsaufgabe
+#### Herunterladen und entpacken
 
-1. Erstellen Sie ein Arbeitsverzeichnis um Ihre Übungsaufgaben abzuspeichern. Legen Sie dieses Verzeichnis beispielsweise in Ihrem Homeverzeichnis an und vergeben Sie den Namen `prog1-uebungen`.
-2. Laden Sie das Archiv `Einstieg-zuhause.jar` unter dem Link www-home.htwg-konstanz.de/~drachen/prog1/Einstieg-zuhause.jar herunter und speichern Sie dieses in Ihrem Arbeitsverzeichnis.
-3. Entpacken Sie das Archiv, in dem Sie eine Konsole öffnen und mit `cd` in Ihr Arbeitsverzeichnis wechseln. Führen Sie dann den Konsolenbefehl `jar xf Einstieg-zuhause.jar` aus.
+1. Rufen Sie folgende Seite auf: https://notepad-plus-plus.org/downloads/ . Die aktuellste
+Version steht an oberster Stelle (momentan: 7.8.5). Klicken Sie unter `Download 64-bit x64` auf 
+`zip-package`, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner zum
+Beispiel unter `Downloads`.
+2. Klick Sie mit der rechten Maustaste auf die Datei `npp.7.8.5.bin.x64.zip`. Wählen Sie im Kontextmenu 
+`Alle extrahieren`. Geben Sie nun im Textfeld `C:\Notepad++` ein und klicken auf `Extrahieren`.
 
-#### Anpassen der build.xml Datei
+#### Umgebungsvraiablen setzen
 
-4. Öffnen Sie die Datei build.xml in einem Text Editor.
-5. Geben Sie den Pfad zu Checkstyle und Sportbugs in den entsprechenden Eigenschaften an. Wenn Sie die Wekrkzeuge wie in der Anleitung vorgeschlagen installiert haben können Sie folgende Anpassungen vornehmen:  
-Ändern Sie folgende Zeilen von
-```
-    <property name="checkstyle.dir" value="c:/checkstyle/"/>
-    <property name="checkstyle.jar" value="${checkstyle.dir}checkstyle-8.30-all.jar"/>
-```
-zu
-```
-    <property name="checkstyle.dir" value="C:/Users/USERNAME/Checkstyle/"/>
-    <property name="checkstyle.jar" value="${checkstyle.dir}checkstyle-8.31-all.jar"/>
-```
-Und diese Zeile
-```
-    <property name="spotbugs.home" value="c:/spotbugs-4.0.1/"/>
-```
+3. Fügen Sie `C:\Notepad++\` zu Ihrer `Path` Umgebungsvariable hinzu. Gehen Sie dazu vor wie in den 
+vorherigen Abschnitten beschrieben.
 
-zu 
-```
-    <property name="spotbugs.home" value="C:/Users/USERNAME/spotbugs-4.0.1/"/>
-```
+
+#### Test
+
+3. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen`
+geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console. Geben Sie folgende Anweisung 
+ein: `notepad++`. Der Editor sollte sich nun in einem neuen Fenster öffnen.
+
+
+## Kennenlernen der Programmierwerkzeuge
+
+1. Erstellen Sie ein Arbeitsverzeichnis um Ihre Übungsaufgaben abzuspeichern. Legen Sie dieses 
+Verzeichnis beispielsweise unter `C:\` an und vergeb Sie den Namen `prog1-uebungen`.
+2. Laden Sie das Archiv `Einstieg-zuhause.jar` unter dem Link 
+www-home.htwg-konstanz.de/~drachen/prog1/Einstieg-zuhause.jar herunter und speichern Sie dieses in 
+Ihrem Arbeitsverzeichnis.
+3. Entpacken Sie das Archiv, in dem Sie eine Konsole öffnen und mit `cd C:\prog1-uebungen` in Ihr 
+Arbeitsverzeichnis wechseln. Führen Sie dann den Konsolenbefehl `jar xf Einstieg-zuhause.jar` aus.
+4. Öffnen Sie die Datei build.xml in Notepad++ mit folgendem Befehl: `notepad++ build.xml`.
+5. Passen Sie die Versionsnummer von Checkstyle an. Ändern Sie dafür in Zeile 13 die Version `8.30` zu 
+`8.31`, wenn Sie diese Version verwenden.
+6. Wecheln Sie in der Konsole mit `cd einstieg` in den Ordner `einstieg`. Starten Sie in der Konsole den 
+Editor Notepad++, indem Sie den folgenden Befehl eintippen `notepad++ Einstieg.java`. Geben Sie im 
+Editor das folgende Programm ein. Beenden Sie den Editor und speichern Sie dabei Ihr Programm.
+```java
+//Einstieg.java
+package einstieg;
+
+import java.util.Scanner;
+
+/**
+ * Einstieg ist ein kleinesJava-Programm.
+ * Es verwendet die Klassen Scanner und System aus der Java-Bibliothek.
+ * @author TODO: Name eintragenund TODO inklusive Doppelpunkt löschen
+ * @version TODO: Datum eintragenund TODO inklusive Doppelpunkt löschen
+ */
+
+public final class Einstieg {
+	private Einstieg() { }
+
+	private static final Scanner EINGABE= new Scanner(System.in);
+
+	/**
+	 * Die Klassenmethodemain ist der Startpunkt des Programms.
+	 * main verwendet die Methoden print und printf zum Ausgeben von Text
+	 * sowie die Methodennext und nextInt zum Einlesen von Text
+	 * und einer ganzen Zahl.
+	 * @param args wird nicht verwendet
+	 */
+
+	public static void main(String[] args) {
+		System.out.print("Vorname:");
+		String vorname = EINGABE.next();
+		
+		System.out.print("Anzahl bisher geschriebener Java-Programme: ");
+		int anzahl = EINGABE.nextInt();
+
+		System.out.printf("%ss %d. Java-Programm funktioniert!%n",
+			vorname, anzahl + 1);
+	}
+}
+````
+
+7. Übersetzen Sie Ihr Programm im Terminal mit dem Befehl `javac Einstieg.java`.
+8. Wechseln Sie mit dem cd-Befehl in das Oberverzeichnis von einstieg/, also in das Arbeitsverzeichnis (auf die Leerstelle zwischen cd und .. achten):
+`cd ..`.
+9. Lassen Sie Ihr Programm laufen mit dem Befehl `java einstieg.Einstieg`. Das Programm fordert Sie auf, 
+Ihren Vornamen sowie die Anzahl Ihrer bisher geschriebenen Java-Programme einzugeben, und gibt 
+anschließend einen Text aus.
+10. Prüfen Siemit dem Werkzeug checkstyle, ob Sie in Ihrem Programm Stilregeln verletzt haben. Sie 
+können checkstyle über das Automatisierungswerkzeug ant aufrufen: `ant -Dpackage=einstieg style`.
+Bessern Sie nach, falls checkstyle Stilverletzungen meldet und gehen Sie zurück zu Schritt 7.
+11. Erzeugen Sie HTML-Dokumentation zum Programm mit dem Befehl: 
+`javadoc -html5 -d doc -linksource -author -version einstieg`. Betrachten Sie die Dokumentation. Im 
+Dateimanager im neuen Unterverzeichnis doc/ die Datei index.html anklicken und dann die Links auf der 
+angezeigten Seite weiterverfolgen, oder die Datei Lesezeichen.html im Arbeitsverzeichnis als Einstieg 
+verwenden. Untersuchen Sie, welche Texte aus den .java-Dateien wo in den HTML-Seiten stehen.
+
