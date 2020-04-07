@@ -1,7 +1,7 @@
 # Anleitung Installation und Einrichtung der Wekrzeuge
 
-für Windows 10  
-Datum: 02.04.2020
+für Windows 10, MacOS  
+Datum: 07.04.2020
 
 ## Installation 
 
@@ -11,15 +11,12 @@ Datum: 02.04.2020
 
 1. Rufen Sie folgende Seite auf, um das JDK herunter zu laden: https://jdk.java.net 
 2. Öffnen Sie die Seite der aktuellen Version. Diese wird bei `Ready for use` genannt. (aktuell: JDK 14) 
-3. Unter `Builds` finden Sie das Archiv zum Download. Klicken Sie auf `zip`, hinter `Windows/x64` um den 
-Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner, z.B. unter Downloads.
-4. Öffnen Sie das die Datei `openjdk-14_windows-x64_bin.zip` mit einem Doppelklick. Das Archiv enthält den 
-Ordner `jdk-14`. Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USERNAME. Dies können Sie 
-einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer Fenster öffnen und
-anschließend den Ordner `jdk-14` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
+3. Unter `Builds` finden Sie das Archiv zum Download. Klicken Sie auf `zip`, hinter `Windows/x64`(auf MacOS tar.gz hinter `macOS\x64`) um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner, z.B. unter Downloads.
+4. Öffnen Sie die Datei `openjdk-14_windows-x64_bin.zip`(`openjdk-14_osx-x64_bin.tar` auf MacOS) mit einem Doppelklick. Das Archiv enthält den Ordner `jdk-14`(`jdk-14.jdk` auf MacOS). Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USERNAME(`/Users/USERNAME` auf MACOS). Dies können Sie einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer(Finder auf MacOS) Fenster öffnen und anschließend den Ordner `jdk-14` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
+    
 
 #### Umgebungsvraiablen setzen
-
+##### Auf Windows 10
 5. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvraiablen`. Wählen Sie den Vorschlag
 `Umgebungsvariablen für dieses Konto bearbeiten`. Es öffnet sich ein Fenster, in dem Sie die 
 Umgebungsvariablen bearbeiten können.
@@ -30,11 +27,15 @@ Es öffnet sich ein weiteres Fenster, in dem Sie den Inhalt der Path-Variable be
 8. Wählen Sie nun im Fenster `Umgebungsvariablen` wieder im oberen Bereich `Neu...`. Geben Sie bei 
 `JAVA_HOME` als Name und `C:\Users\USERNAME\jdk-14\` als Wert der Variable ein und klicken Sie auf `Ok`.
 9. Klicken Sie auch im Fenster `Umgebungsvariablen` auf `Ok`.
-
+##### Auf MacOS
+5M. Öffnen Sie Terminal, indem Sie die Tastenkombination Command + Leerzeichen drücken und nach Terminal suchen.
+6M. Führen Sie diesen Kommand aus: `echo export "JAVA_HOME=/Users/USERNAME/jdk-14.jdk/Contents/Home" >> ~/.bash_profile`
+7M. Dann führen Sie diesen Kommand: source .bash_profile
 #### Test
-
+##### Auf Windows 10
 10. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
+10M. Offnen Sie wieder Terminal.
 11. Geben Sie ein: `java -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
 openjdk version `14` 2020-03-17
@@ -42,8 +43,15 @@ OpenJDK Runtime Environment (build 14+36-1461)
 OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)
 ```
 12. Geben Sie nun `%JAVA_HOME%\bin\java -version` ein. Sie sollten die gleiche ausgabe erhalten.
-
-
+##### Auf MacOS
+8M. Offnen Sie wieder Terminal.
+9M. Geben Sie ein: `java -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
+```
+openjdk version `14` 2020-03-17
+OpenJDK Runtime Environment (build 14+36-1461)
+OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)
+```
+10M. Geben Sie nun `$JAVA_HOME\bin\java -version` ein. Sie sollten die gleiche ausgabe erhalten.
 ### 2. Ant
 
 #### Herunterladen und entpacken
