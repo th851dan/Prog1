@@ -54,8 +54,9 @@ OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)
 
 ##### Auf MacOS
 
-8. Offnen Sie wieder Terminal.
-9. Geben Sie ein: `java -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
+8M. Offnen Sie wieder Terminal.
+
+9M. Geben Sie ein: `java -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
 openjdk version `14` 2020-03-17
 OpenJDK Runtime Environment (build 14+36-1461)
@@ -94,9 +95,13 @@ auf `Ok`.
 ##### Auf MacOS 10
 
 4M. Öffnen Sie Terminal.
+
 5M. Geben Sie `echo export "ANT_HOME=/Users/USERNAME/apache-ant-1.10.7" >> ~/.bash_profile` ein und drücken Sie die Eingabetaste.
+
 6M. Dann führen Sie diesen Kommand: `source .bash_profile` aus.
-7M. Dannach führen Sie diesen Kommand aus: `echo export "PATH=$PATH:$ANT_HOME/bin" >> ~/.bash_profile`
+
+7M. Dannach führen Sie diesen Kommand aus: `echo export "PATH=$PATH:$ANT_HOME/bin" >> ~/.bash_profile`.
+
 8M. Anschließen führen Sie nochmals den Kommand: `source .bash_profile` aus.
 
 #### Test
@@ -114,11 +119,13 @@ Apache Ant(TM) version 1.10.7 compiled on September 1 2019
 ##### Auf MacOS
 
 9M. Offnen Sie wieder Terminal.
+
 10M. Geben Sie ein: `ant -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
 Apache Ant(TM) version 1.10.7 compiled on September 1 2019
 ```
-10M. Geben Sie nun `$ANT_HOME/bin/ant -version` ein. Sie sollten die gleiche ausgabe erhalten.
+
+11M. Geben Sie nun `$ANT_HOME/bin/ant -version` ein. Sie sollten die gleiche ausgabe erhalten.
 
 ### 3. Artistic Style (astyle) 
 
@@ -147,7 +154,9 @@ Sie auf `Ok`.
 ##### Auf MacOS 10
 
 3M. Öffnen Sie Terminal.
+
 4M. Homebrew installieren, indem Sie den Kommand `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null` ausführen. Sie können diesen Schritt vernachlässigen, wenn Sie bereits Brew haben.
+
 5M. Dann führen Sie diesen Kommand: `brew install astyle` aus.
 
 #### Test
@@ -196,7 +205,9 @@ Checkstyle version: 8.31
 ##### Auf MacOS 10
 
 3M. Öffnen Sie Terminal. 
-4M. Wechseln Sie in das Verzeichnis `Checkstyle` mit folgender Anweisung: `cd /Users/USERNAME/Checkstyle`
+
+4M. Wechseln Sie in das Verzeichnis `Checkstyle` mit folgender Anweisung: `cd /Users/USERNAME/Checkstyle`.
+
 5M. Geben Sie `java -jar checkstyle-8.31-all.jar --version` ein und drücken Sie die Eingabetaste. Wenn Sie alles richtig gemacht haben.
 erscheint nun folgender Text: 
 ```
@@ -248,9 +259,12 @@ General options:
 ##### Auf MacOS 10
 
 3M. Öffnen Sie Terminal. 
-4M. Wechseln Sie in das Verzeichnis `Checkstyle` mit folgender Anweisung: `cd /Users/USERNAME/spotbugs-4.0.1/bin`
+
+4M. Wechseln Sie in das Verzeichnis `Checkstyle` mit folgender Anweisung: `cd /Users/USERNAME/spotbugs-4.0.1/bin`.
+
 5M. Dann führen Sie den Kommand `chmod 755 spotbugs` aus.
-5M. Geben Sie `./spotbugs -help` ein und drücken Sie die Eingabetaste. Wenn Sie alles richtig gemacht haben.
+
+6M. Geben Sie `./spotbugs -help` ein und drücken Sie die Eingabetaste. Wenn Sie alles richtig gemacht haben.
 erscheint nun folgender Text: 
 ```
 SpotBugs version 4.0.1, https://spotbugs.github.io/
