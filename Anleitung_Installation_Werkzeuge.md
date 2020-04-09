@@ -11,7 +11,7 @@ Datum: 07.04.2020
 
 1. Rufen Sie folgende Seite auf, um das JDK herunter zu laden: https://jdk.java.net 
 2. Öffnen Sie die Seite der aktuellen Version. Diese wird bei `Ready for use` genannt. (aktuell: JDK 14) 
-3. Unter `Builds` finden Sie das Archiv zum Download. Klicken Sie auf `zip`, hinter `Windows/x64`(auf MacOS tar.gz hinter `macOS\x64`) um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner, z.B. unter Downloads.
+3. Unter `Builds` finden Sie das Archiv zum Download. Klicken Sie auf `zip`, hinter `Windows/x64`(auf MacOS tar.gz hinter `macOS/x64`) um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner, z.B. unter Downloads.
 4. Öffnen Sie die Datei `openjdk-14_windows-x64_bin.zip`(`openjdk-14_osx-x64_bin.tar` auf MacOS) mit einem Doppelklick. Das Archiv enthält den Ordner `jdk-14`(`jdk-14.jdk` auf MacOS). Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USERNAME(`/Users/USERNAME` auf MacOS). Dies können Sie einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer(Finder auf MacOS) Fenster öffnen und anschließend den Ordner `jdk-14` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
     
 
@@ -33,7 +33,9 @@ Es öffnet sich ein weiteres Fenster, in dem Sie den Inhalt der Path-Variable be
 ##### Auf MacOS
 
 5M. Öffnen Sie Terminal, indem Sie die Tastenkombination Command + Leerzeichen drücken und nach Terminal suchen.
+
 6M. Führen Sie diesen Kommand aus: `echo export "JAVA_HOME=/Users/USERNAME/jdk-14.jdk/Contents/Home" >> ~/.bash_profile`.
+
 7M. Dann führen Sie diesen Kommand: `source .bash_profile` aus.
 
 #### Test
@@ -52,8 +54,8 @@ OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)
 
 ##### Auf MacOS
 
-8M. Offnen Sie wieder Terminal.
-9M. Geben Sie ein: `java -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
+8. Offnen Sie wieder Terminal.
+9. Geben Sie ein: `java -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
 openjdk version `14` 2020-03-17
 OpenJDK Runtime Environment (build 14+36-1461)
