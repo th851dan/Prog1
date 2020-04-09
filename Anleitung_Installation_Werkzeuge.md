@@ -18,9 +18,9 @@ Ordner `jdk-14`. Entpacken Sie diesen in das Verzeichnis unter `C:\`. Dies könn
 einfach erledigen, in dem Sie in einem zweiten Explorer Fenster das Verzeichnis `C:\` öffnen und 
 anschließend den Ordner `jdk-14` mit der Maus hinüber ziehen.
 
-#### Umgebungsvraiablen setzen
+#### Umgebungsvariablen setzen
 
-5. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvraiablen`. Wählen Sie den Vorschlag
+5. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvariablen`. Wählen Sie den Vorschlag
 `Umgebungsvariablen für dieses Konto bearbeiten`. Es öffnet sich ein Fenster, in dem Sie die 
 Umgebungsvariablen bearbeiten können.
 6. Wählen Sie im oberen Bereich die Variable `Path` aus und klicken Sie anschließend auf `Bearbeiten`. 
@@ -52,9 +52,9 @@ zum Beispiel unter `Downloads`.
 Ordner `apache-ant-1.10.7`. Entpacken Sie diesen ebenfenfalls in das Verzeichnis unter `C:\`. Gehen Sie dabei
 gleich vor, wie beim Entpacken des JDKs im vorherigen Abschnitt.
 
-#### Umgebungsvraiablen setzen
+#### Umgebungsvariablen setzen
 
-4. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvraiablen`. Wählen Sie den Vorschlag
+4. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvariablen`. Wählen Sie den Vorschlag
 `Umgebungsvariablen für dieses Konto bearbeiten`. Es öffnet sich ein Fenster, in dem Sie die 
 Umgebungsvariablen bearbeiten können.
 5. Wählen Sie im Oberen Bereich die Variable `Path` aus und klicken Sie anschließend auf `Bearbeiten`. 
@@ -84,9 +84,9 @@ Beispiel unter `Downloads`.
 Ordner `AStyle`. Entpacken Sie diesen in das Verzeichnis unter `C:\. Gehen Sie dabei gleich vor, wie in 
 den vorherigen Abschnitten.
 
-#### Umgebungsvraiablen setzen
+#### Umgebungsvariablen setzen
 
-3. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvraiablen`. Wählen Sie den Vorschlag
+3. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvariablen`. Wählen Sie den Vorschlag
 `Umgebungsvariablen für dieses Konto bearbeiten`. Es öffnet sich ein Fenster, in dem Sie die 
 Umgebungsvariablen bearbeiten können.
 4. Wählen Sie im Oberen Bereich die Variable `Path` aus und klicken Sie anschließend auf `Bearbeiten`. 
@@ -176,7 +176,7 @@ Beispiel unter `Downloads`.
 2. Klick Sie mit der rechten Maustaste auf die Datei `npp.7.8.5.bin.x64.zip`. Wählen Sie im Kontextmenu 
 `Alle extrahieren`. Geben Sie nun im Textfeld `C:\Notepad++` ein und klicken auf `Extrahieren`.
 
-#### Umgebungsvraiablen setzen
+#### Umgebungsvariablen setzen
 
 3. Fügen Sie `C:\Notepad++\` zu Ihrer `Path` Umgebungsvariable hinzu. Gehen Sie dazu vor, wie in den 
 vorherigen Abschnitten beschrieben.
@@ -184,7 +184,7 @@ vorherigen Abschnitten beschrieben.
 
 #### Test
 
-3. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen`
+4. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen`
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Konsole. Geben Sie folgende Anweisung 
 ein: `notepad++`. Der Editor sollte sich nun in einem neuen Fenster öffnen.
 
