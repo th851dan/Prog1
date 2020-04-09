@@ -15,9 +15,11 @@ Datum: 07.04.2020
 4. Öffnen Sie die Datei `openjdk-14_windows-x64_bin.zip`(`openjdk-14_osx-x64_bin.tar` auf MacOS) mit einem Doppelklick. Das Archiv enthält den Ordner `jdk-14`(`jdk-14.jdk` auf MacOS). Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USERNAME(`/Users/USERNAME` auf MacOS). Dies können Sie einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer(Finder auf MacOS) Fenster öffnen und anschließend den Ordner `jdk-14` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
     
 
-#### Umgebungsvraiablen setzen
+#### Umgebungsvariablen setzen
+
 ##### Auf Windows 10
-5. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvraiablen`. Wählen Sie den Vorschlag
+
+5. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvariablen`. Wählen Sie den Vorschlag
 `Umgebungsvariablen für dieses Konto bearbeiten`. Es öffnet sich ein Fenster, in dem Sie die 
 Umgebungsvariablen bearbeiten können. 
 6. Wählen Sie im Oberen Bereich die Variable `Path` aus und klicken Sie anschließend auf `Bearbeiten`. 
@@ -27,15 +29,19 @@ Es öffnet sich ein weiteres Fenster, in dem Sie den Inhalt der Path-Variable be
 8. Wählen Sie nun im Fenster `Umgebungsvariablen` wieder im oberen Bereich `Neu...`. Geben Sie bei 
 `JAVA_HOME` als Name und `C:\Users\USERNAME\jdk-14\` als Wert der Variable ein und klicken Sie auf `Ok`.
 9. Klicken Sie auch im Fenster `Umgebungsvariablen` auf `Ok`. 
+
 ##### Auf MacOS
+
 5M. Öffnen Sie Terminal, indem Sie die Tastenkombination Command + Leerzeichen drücken und nach Terminal suchen.
 6M. Führen Sie diesen Kommand aus: `echo export "JAVA_HOME=/Users/USERNAME/jdk-14.jdk/Contents/Home" >> ~/.bash_profile`.
-7M. Dann führen Sie diesen Kommand: source .bash_profile.
+7M. Dann führen Sie diesen Kommand: `source .bash_profile` aus.
+
 #### Test
+
 ##### Auf Windows 10
+
 10. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
-10M. Offnen Sie wieder Terminal.
 11. Geben Sie ein: `java -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
 openjdk version `14` 2020-03-17
@@ -43,7 +49,9 @@ OpenJDK Runtime Environment (build 14+36-1461)
 OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)
 ```
 12. Geben Sie nun `%JAVA_HOME%\bin\java -version` ein. Sie sollten die gleiche ausgabe erhalten.
+
 ##### Auf MacOS
+
 8M. Offnen Sie wieder Terminal.
 9M. Geben Sie ein: `java -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
@@ -51,23 +59,25 @@ openjdk version `14` 2020-03-17
 OpenJDK Runtime Environment (build 14+36-1461)
 OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)
 ```
-10M. Geben Sie nun `$JAVA_HOME\bin\java -version` ein. Sie sollten die gleiche ausgabe erhalten.
+10M. Geben Sie nun `$JAVA_HOME/bin/java -version` ein. Sie sollten die gleiche ausgabe erhalten.
+
 ### 2. Ant
 
 #### Herunterladen und entpacken
 
 1. Rufen Sie folgende Seite auf: https://ant.apache.org/bindownload.cgi
 2. Unter `Current Release of Ant` wird die aktuell Version genannet (momentan: 1.10.7). Klicken Sie auf 
-den link mit der .zip Endung, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner 
+den link mit der .zip(.tar.gz auf MacOS) Endung, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner 
 zum Beispiel unter `Downloads`.
-3. Öffnen Sie das die Datei apache-ant-1.10.7-bin.zip mit einem Doppelklick. Das Archiv enthält den 
-Ordner `apache-ant-1.10.7`. Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USERNAME. Dies 
-können Sie einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer Fenster öffnen 
+3. Öffnen Sie das die Datei apache-ant-1.10.7-bin.zip(.tar.gz auf MacOS) mit einem Doppelklick. Das Archiv enthält den 
+Ordner `apache-ant-1.10.7`. Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USERNAME(`/Users/USERNAME` auf MacOS). Dies können Sie einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer Fenster öffnen 
 und anschließend den Ordner `apache-ant-1.10.7` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
 
-#### Umgebungsvraiablen setzen
+#### Umgebungsvariablen setzen
 
-4. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvraiablen`. Wählen Sie den Vorschlag
+##### Auf Windows 10
+
+4. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvariablen`. Wählen Sie den Vorschlag
 `Umgebungsvariablen für dieses Konto bearbeiten`. Es öffnet sich ein Fenster, in dem Sie die 
 Umgebungsvariablen bearbeiten können.
 5. Wählen Sie im Oberen Bereich die Variable `Path` aus und klicken Sie anschließend auf `Bearbeiten`. 
@@ -79,7 +89,17 @@ Sie auf `Ok`.
 auf `Ok`.
 8. Klicken Sie auch im Fenster `Umgebungsvariablen` auf `Ok`.
 
+##### Auf MacOS 10
+
+4M. Öffnen Sie Terminal.
+5M. Geben Sie `echo export "ANT_HOME=/Users/USERNAME/apache-ant-1.10.7" >> ~/.bash_profile` ein und drücken Sie die Eingabetaste.
+6M. Dann führen Sie diesen Kommand: `source .bash_profile` aus.
+7M. Dannach führen Sie diesen Kommand aus: `echo export "PATH=$PATH:$ANT_HOME/bin" >> ~/.bash_profile`
+8M. Anschließen führen Sie nochmals den Kommand: `source .bash_profile` aus.
+
 #### Test
+
+##### Auf Windows 10
 
 9. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
@@ -89,6 +109,14 @@ Apache Ant(TM) version 1.10.7 compiled on September 1 2019
 ```
 11. Geben Sie nun `%ANT_HOME%\bin\ant -version` ein. Sie sollten die gleiche ausgabe erhalten.
 
+##### Auf MacOS
+
+9M. Offnen Sie wieder Terminal.
+10M. Geben Sie ein: `ant -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
+```
+Apache Ant(TM) version 1.10.7 compiled on September 1 2019
+```
+10M. Geben Sie nun `$ANT_HOME/bin/ant -version` ein. Sie sollten die gleiche ausgabe erhalten.
 
 ### 3. Artistic Style (astyle) 
 
@@ -97,14 +125,15 @@ Apache Ant(TM) version 1.10.7 compiled on September 1 2019
 1. Rufen Sie folgende Seite auf: https://sourceforge.net/projects/astyle/files/ . Klicken Sie auf 
 `Download Latest Version`, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner zum 
 Beispiel unter `Downloads`.
-2. Öffnen Sie das die Datei `ASytle_3.1_windows.zip` mit einem Doppelklick. Das Archiv enthält den 
-Ordner `AStyle`. Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USERNAME. Dies 
-können Sie einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer Fenster öffnen und
+2. Öffnen Sie das die Datei `ASytle_3.1_windows.zip(.tar.gz auf macOS)` mit einem Doppelklick. Das Archiv enthält den 
+Ordner `AStyle`(astyle auf MacOS). Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USERNAME(/Users/USERNAME auf MacOS). Dies können Sie einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer Fenster öffnen und
 anschließend den Ordner `AStyle` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
 
-#### Umgebungsvraiablen setzen
+#### Umgebungsvariablen setzen
 
-3. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvraiablen`. Wählen Sie den Vorschlag
+##### Auf Windows 10
+
+3. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvariablen`. Wählen Sie den Vorschlag
 `Umgebungsvariablen für dieses Konto bearbeiten`. Es öffnet sich ein Fenster, in dem Sie die 
 Umgebungsvariablen bearbeiten können.
 4. Wählen Sie im Oberen Bereich die Variable `Path` aus und klicken Sie anschließend auf `Bearbeiten`. 
@@ -113,7 +142,15 @@ Es öffnet sich ein weiteres Fenster, in dem Sie den Inhalt der Path-Variable be
 Sie auf `Ok`.
 6. Klicken Sie auch im Fenster `Umgebungsvariablen` auf `Ok`.
 
+##### Auf MacOS 10
+
+3M. Öffnen Sie Terminal.
+4M. Homebrew installieren, indem Sie den Kommand `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null` ausführen. Sie können diesen Schritt vernachlässigen, wenn Sie bereits Brew haben.
+5M. Dann führen Sie diesen Kommand: `brew install astyle` aus.
+
 #### Test
+
+##### Auf Windows 10
 
 7. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
@@ -121,10 +158,18 @@ geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
 ```
 Artistic Style Version 3.
 ```
+##### Auf MacOS 10
+
+6M. Geben Sie in Terminal ein: `astyle --version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
+```
+Artistic Style Version 3.1
+```
 
 ### 4. checkstyle 
 
 #### Herunterladen und entpacken
+
+##### Auf Windows 10 und MacOS
 
 1. Rufen Sie folgende Seite auf: https://github.com/checkstyle/checkstyle/releases/ . Die aktuellste 
 Version steht an oberster Stelle (momentan: 8.31). Klicken Sie unter `Assets` auf 
@@ -133,7 +178,10 @@ Beispiel unter `Downloads`.
 2. Legen Sie in Ihrem Homeverzeichnis einen neuen Ordner mit dem Name `Checkstyle` an. Verschieben Sie 
 die Datei `checkstyle-8.31-all.jar` aus `Downloads` in diesen neuen Ordner.
 
+
 #### Test
+
+##### Auf Windows 10
 
 3. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console. Wechseln Sie in das 
@@ -143,24 +191,64 @@ erscheint nun folgender Text:
 ```
 Checkstyle version: 8.31
 ```
+##### Auf MacOS 10
+
+3M. Öffnen Sie Terminal. 
+4M. Wechseln Sie in das Verzeichnis `Checkstyle` mit folgender Anweisung: `cd /Users/USERNAME/Checkstyle`
+5M. Geben Sie `java -jar checkstyle-8.31-all.jar --version` ein und drücken Sie die Eingabetaste. Wenn Sie alles richtig gemacht haben.
+erscheint nun folgender Text: 
+```
+Checkstyle version: 8.31
+``` 
 
 ### 5. spotbugs
 
 #### Herunterladen und entpacken
 
 1. Rufen Sie folgende Seite auf: https://spotbugs.readthedocs.io/en/stable/installing.html . Die 
-Klicken Sie im ersten Abschnitt auf den Link `zip-format`, um den Download zu starten. Speichern Sie das 
-Archiv auf Ihrem Rechner zum Beispiel unter `Downloads`.
-2. Öffnen Sie das die Datei `spotbugs-4.0.1.zip` mit einem Doppelklick. Das Archiv enthält den 
-Ordner `spotbugs-4.0.1`. Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USERNAME. Dies 
+Klicken Sie im ersten Abschnitt auf den Link `zip-format(gzipped tar format auf MacOS)`, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner zum Beispiel unter `Downloads`.
+2. Öffnen Sie das die Datei `spotbugs-4.0.1.zip(spotbugs-4.0.1.tgz auf MacOS)` mit einem Doppelklick. Das Archiv enthält den 
+Ordner `spotbugs-4.0.1`. Entpacken Sie diesen in Ihr Homeverzeichnis unter C:\Users\USERNAME(/Users/USERNAME auf MacOS). Dies 
 können Sie einfach erledigen, in dem Sie Ihr Homeverzeichnis in einem zweiten Explorer Fenster öffnen und
 anschließend den Ordner `spotbugs-4.0.1` mit der Maus in Ihr Homeverzeichnis hinüber ziehen.
 
 #### Test
 
+##### Auf Windows 10
+
 3. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Console.
 4. Geben Sie ein: `C:\Users\USERNAME\spotbugs-4.0.1\bin\spotbugs -help`. Wenn Sie alles richtig gemacht haben 
+erscheint nun folgender Text: 
+```
+SpotBugs version 4.0.1, https://spotbugs.github.io/
+Command line options
+fb analyze                   Perform SpotBugs Analysis
+fb errors                    List analysis errors stored in results file
+fb filter                    Filter analysis results
+fb gui                       Launch SpotBugs GUI
+fb help                      Provide help for commands
+fb list                      Convert analysis results to textual form
+fb set                       Set project configuration/options
+fb version                   List SpotBugs version
+fb history      history      List details from multi-version analysis results
+fb merge        history      Combine analysis results from different versions of software to produce multi-version analysis results
+fb union        history      Merge analysis results from disjoint components
+fb addMessages  poweruser    Add msgs (e.g., textual descriptions of bugs) to analysis results
+fb dis          utility      Disassemble a class file
+
+General options:
+  -jvmArgs args    Pass args to JVM
+  -maxHeap size    Maximum Java heap size in megabytes (default=768)
+  -javahome <dir>  Specify location of JRE
+```
+
+##### Auf MacOS 10
+
+3M. Öffnen Sie Terminal. 
+4M. Wechseln Sie in das Verzeichnis `Checkstyle` mit folgender Anweisung: `cd /Users/USERNAME/spotbugs-4.0.1/bin`
+5M. Dann führen Sie den Kommand `chmod 755 spotbugs` aus.
+5M. Geben Sie `./spotbugs -help` ein und drücken Sie die Eingabetaste. Wenn Sie alles richtig gemacht haben.
 erscheint nun folgender Text: 
 ```
 SpotBugs version 4.0.1, https://spotbugs.github.io/
@@ -203,8 +291,14 @@ General options:
     <property name="checkstyle.jar" value="${checkstyle.dir}checkstyle-8.30-all.jar"/>
 ```
 zu
+##### Auf Windows 10
 ```
     <property name="checkstyle.dir" value="C:/Users/USERNAME/Checkstyle/"/>
+    <property name="checkstyle.jar" value="${checkstyle.dir}checkstyle-8.31-all.jar"/>
+```
+##### Auf MacOS
+```
+    <property name="checkstyle.dir" value="/Users/USERNAME/Checkstyle/"/>
     <property name="checkstyle.jar" value="${checkstyle.dir}checkstyle-8.31-all.jar"/>
 ```
 Und diese Zeile
@@ -213,6 +307,11 @@ Und diese Zeile
 ```
 
 zu 
+##### Auf Windows 10
 ```
     <property name="spotbugs.home" value="C:/Users/USERNAME/spotbugs-4.0.1/"/>
+```
+##### Auf MacOS
+```
+    <property name="checkstyle.dir" value="/Users/USERNAME/spotbugs-4.0.1/"/>
 ```
