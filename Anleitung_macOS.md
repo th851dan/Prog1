@@ -75,26 +75,21 @@ Apache Ant(TM) version 1.10.7 compiled on September 1 2019
 
 #### Herunterladen und entpacken
 
-1. Rufen Sie folgende Seite auf: [https://sourceforge.net/projects/astyle/files/astyle] . Klicken Sie 
-auf die akutellste Version (momentan 3.1). Klicken Sie mit der rechten Maustaste auf den Link mit der 
-`macos.tar.gz` Endung. Kopieren Sie den Link.
-2. Laden Sie das Archiv herunter und entpacken Sie es in Ihr Homeverzeichnis. Gehen Sie dabei vor, wie
-in den vorherigen Abschnitten beschrieben.
-3. Um aus den Source-Files eine Ausführbare Datei zu bauen, führen Sie folgende Befehle aus:  
-`cd astyle/build/mac`  
-`make`
-
-
-#### Umgebungsvariablen setzen
-
-3. Fügen Sie Ant zu Ihrer PATH Umgebunsvariable mit folgendem Befehl hinzu:  
-`echo 'export PATH=$HOME/astyle/bin:$PATH' >> ~/.bash_profile`
-4. Führen Sie folgenden Befehl aus:  
-`source ~/.bash_profile`.
+1. Um Astyle zu installieren wird der Paketmanager Homebrew (brew) benötigt. Wenn Sie Homebrew bereits
+installiert haben können Sie diesenS Schritt überspringen.
+Geben Sie folgendes Kommado in das Terminal ein:
+```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2>
+ /dev/null` 
+```
+Geben Sie das Admin-Passwort ein, wenn Sie dazu aufgefordert werden. Dieser Schritt kann ein paar Minuten
+dauertn.
+2. Wenn Sie Homebrew installiert haben können Sie das Paket astyle installieren. Führen Sie folgenden
+Befehl aus:
+`bew install astyle`
 
 #### Test
 
-6. Geben Sie ein: `astyle --version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
+3. Geben Sie ein: `astyle --version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
 Artistic Style Version 3.1
 ```
@@ -103,20 +98,12 @@ Artistic Style Version 3.1
 
 #### Herunterladen und entpacken
 
-1. Rufen Sie folgende Seite auf: https://github.com/checkstyle/checkstyle/releases/ . Die aktuellste 
-Version steht an oberster Stelle (momentan: 8.31). Klicken Sie unter `Assets` auf 
-`checkstyle-8.31-all.jar`, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner zum 
-Beispiel unter `Downloads`.
-2. Legen Sie unter `C:\` einen neuen Ordner mit den Namen `Checkstyle` an. Verschieben Sie 
-die Datei `checkstyle-8.31-all.jar` aus `Downloads` in diesen neuen Ordner.
+1. Führen Sie folgenden Befehl aus, um checkstyle mit Homebrew zu installieren:
+`bew install checkstyle`
 
 #### Test
 
-3. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
-geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Konsole. Wechseln Sie in das 
-Verzeichnis `Checkstyle` mit folgender Anweisung: `cd C:\Checkstyle`
-4. Geben Sie ein: `java -jar checkstyle-8.31-all.jar --version`. Wenn Sie alles richtig gemacht haben 
-erscheint nun folgender Text: 
+2. Geben Sie ein: `checkstyle --version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
 Checkstyle version: 8.31
 ```
@@ -125,18 +112,12 @@ Checkstyle version: 8.31
 
 #### Herunterladen und entpacken
 
-1. Rufen Sie folgende Seite auf: https://spotbugs.readthedocs.io/en/stable/installing.html . Die 
-Klicken Sie im ersten Abschnitt auf den Link `zip-format`, um den Download zu starten. Speichern Sie das 
-Archiv auf Ihrem Rechner zum Beispiel unter `Downloads`.
-2. Öffnen Sie das die Datei `spotbugs-4.0.1.zip` mit einem Doppelklick. Das Archiv enthält den 
-Ordner `spotbugs-4.0.1`. Entpacken Sie diesen Ordner nach  `C:\`.
+1. Führen Sie folgenden Befehl aus, um spotbugs mit Homebrew zu installieren:
+`bew install spotbugs`
 
 #### Test
 
-3. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
-geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Konsole.
-4. Geben Sie ein: `C:\spotbugs-4.0.1\bin\spotbugs -help`. Wenn Sie alles richtig gemacht haben 
-erscheint nun folgender Text: 
+2. Geben Sie ein: `spotbugs --help`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
 SpotBugs version 4.0.1, https://spotbugs.github.io/
 Command line options
@@ -160,43 +141,22 @@ General options:
   -javahome <dir>  Specify location of JRE
 ```
 
-### 6. Notepad++
-
-#### Herunterladen und entpacken
-
-1. Rufen Sie folgende Seite auf: https://notepad-plus-plus.org/downloads/ . Die aktuellste
-Version steht an oberster Stelle (momentan: 7.8.5). Klicken Sie unter `Download 64-bit x64` auf 
-`zip-package`, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner zum
-Beispiel unter `Downloads`.
-2. Klick Sie mit der rechten Maustaste auf die Datei `npp.7.8.5.bin.x64.zip`. Wählen Sie im Kontextmenu 
-`Alle extrahieren`. Geben Sie nun im Textfeld `C:\Notepad++` ein und klicken auf `Extrahieren`.
-
-#### Umgebungsvariablen setzen
-
-3. Fügen Sie `C:\Notepad++\` zu Ihrer `Path` Umgebungsvariable hinzu. Gehen Sie dazu vor, wie in den 
-vorherigen Abschnitten beschrieben.
-
-
-#### Test
-
-4. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen`
-geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Konsole. Geben Sie folgende Anweisung 
-ein: `notepad++`. Der Editor sollte sich nun in einem neuen Fenster öffnen.
+### 6. TODO: Editor installieren
 
 
 ## Kennenlernen der Programmierwerkzeuge - Einstiegsaufgabe
 
-1. Erstellen Sie ein Arbeitsverzeichnis um Ihre Übungsaufgaben abzuspeichern. Legen Sie dieses 
-Verzeichnis beispielsweise unter `C:\` an und vergeb Sie den Namen `prog1-uebungen`.
-2. Laden Sie das Archiv `Einstieg-zuhause.jar` unter dem Link 
-www-home.htwg-konstanz.de/~drachen/prog1/Einstieg-zuhause.jar herunter und speichern Sie dieses in 
-Ihrem Arbeitsverzeichnis.
-3. Entpacken Sie das Archiv, in dem Sie eine Konsole öffnen und mit `cd C:\prog1-uebungen` in Ihr 
+1. Erstellen Sie ein Arbeitsverzeichnis um Ihre Übungsaufgaben abzuspeichern.  
+`mkdir prog1-uebungen`
+2. Laden Sie das Archiv `Einstieg-zuhause.jar` herunter und speichern Sie dieses in Ihrem 
+Arbeitsverzeichnis.  
+`curl -o prog1-uebungen/Einstieg-zuhause.jar www-home.htwg-konstanz.de/~drachen/prog1/Einstieg-zuhause.jar`
+3. Entpacken Sie das Archiv, in dem Sie eine Konsole öffnen und mit `cd prog1-uebungen` in Ihr 
 Arbeitsverzeichnis wechseln. Führen Sie dann den Konsolenbefehl `jar xf Einstieg-zuhause.jar` aus.
-4. Öffnen Sie die Datei build.xml in Notepad++ mit folgendem Befehl: `notepad++ build.xml`.
+4. Öffnen Sie die Datei build.xml in *Notepad++* mit folgendem Befehl: `*notepad++* build.xml`.
 5. Passen Sie die Versionsnummer von Checkstyle an. Ändern Sie dafür in Zeile 13 die Version `8.30` zu 
 `8.31`, wenn Sie diese Version verwenden.
-6. Wecheln Sie in der Konsole mit `cd einstieg` in den Ordner `einstieg`. Starten Sie in der Konsole den 
+6. Wecheln Sie im Terminal mit `cd einstieg` in den Ordner `einstieg`. Starten Sie in der Konsole den 
 Editor Notepad++, indem Sie den folgenden Befehl eintippen `notepad++ Einstieg.java`. Geben Sie im 
 Editor das folgende Programm ein. Beenden Sie den Editor und speichern Sie dabei Ihr Programm.
 
@@ -227,7 +187,7 @@ public final class Einstieg {
 	 */
 
 	public static void main(String[] args) {
-		System.out.print("Vorname:");
+		System.out.print("Vorname: ");
 		String vorname = EINGABE.next();
 		
 		System.out.print("Anzahl bisher geschriebener Java-Programme: ");
@@ -237,7 +197,7 @@ public final class Einstieg {
 			vorname, anzahl + 1);
 	}
 }
-````
+```
 
 7. Übersetzen Sie Ihr Programm im Terminal mit dem Befehl `javac Einstieg.java`.
 8. Wechseln Sie mit dem cd-Befehl in das Oberverzeichnis von einstieg/, also in das Arbeitsverzeichnis 
