@@ -19,6 +19,7 @@ bestätigen Sie mit Enter, um in das Homeverzeichnis zu wechseln.
 5. Um das Archiv mit dem Commandline-Tool curl herunterzuladen geben Sie nun folgenden Konsolenbefehl 
 ein. Ersetzen Sie dabei den Platzhalter <URL> durch den eben kopierten Link.
 `curl -o jdk.tar.gz <URL>`
+Dies kann einen Moment in Anspruch nehmen.
 6. Entpacken Sie das Archiv mit folgedem Befehl:  
 `tar -xf jdk.tar.gz`
 7. Löschen Sie das Archiv mit: `rm jdk.tar.gz`
@@ -26,7 +27,7 @@ ein. Ersetzen Sie dabei den Platzhalter <URL> durch den eben kopierten Link.
 #### Umgebungsvariablen setzen
 
 8. Fügen Sie das JDK zu Ihrer PATH Umgebunsvariable mit folgendem Befehl hinzu:  
-`echo "export PATH=$HOME/jdk-14.jdk/Contents/Home/bin/:$PATH" >> ~/.bash_profile`
+`echo 'export PATH=$HOME/jdk-14.jdk/Contents/Home/bin/:$PATH' >> ~/.bash_profile`
 9. Führen Sie folgenden Befehl aus, um die Umgebungsvariable zu laden:  
 `source ~/.bash_profile`.
 
@@ -44,23 +45,10 @@ OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)
 #### Herunterladen und entpacken
 
 1. Rufen Sie folgende Seite auf: https://ant.apache.org/bindownload.cgi
-2. Unter `Current Release of Ant` wird die aktuell Version genannet (momentan: 1.10.7). Klicken Sie auf 
-den link mit der `.zip` Endung, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner 
-zum Beispiel unter `Downloads`.
-3. Öffnen Sie das die Datei `apache-ant-1.10.7-bin.zip` mit einem Doppelklick. Das Archiv enthält den 
-Ordner `apache-ant-1.10.7`. Entpacken Sie diesen ebenfenfalls in das Verzeichnis unter `C:\`. Gehen Sie dabei
-gleich vor, wie beim Entpacken des JDKs im vorherigen Abschnitt.
-
+2. 
 #### Umgebungsvariablen setzen
 
-4. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvariablen`. Wählen Sie den Vorschlag
-`Umgebungsvariablen für dieses Konto bearbeiten`. Es öffnet sich ein Fenster, in dem Sie die 
-Umgebungsvariablen bearbeiten können.
-5. Wählen Sie im Oberen Bereich die Variable `Path` aus und klicken Sie anschließend auf `Bearbeiten`. 
-Es öffnet sich ein weiteres Fenster, in dem Sie den Inhalt der Path-Variable bearbeiten können.
-6. Gehen Sie auf `Neu` und tragen Sie folgendes ein: `C:\apache-ant-1.10.7\bin`. Klicken 
-Sie auf `Ok`.
-7. Klicken Sie auch im Fenster `Umgebungsvariablen` auf `Ok`.
+
 
 #### Test
 
