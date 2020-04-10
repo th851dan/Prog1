@@ -17,9 +17,9 @@ Datum: 10.04.2020
 anschließend `Terminal` ein. Bestätigen Sie mit Enter. Geben Sie im Terminal `cd ~` ein und 
 bestätigen Sie mit Enter, um in das Homeverzeichnis zu wechseln.  
 5. Um das Archiv mit dem Commandline-Tool curl herunterzuladen geben Sie nun folgenden Konsolenbefehl 
-ein. Ersetzen Sie dabei den Platzhalter <URL> durch den eben kopierten Link.
-`curl -o archiv.tar.gz <URL>`
-Dies kann einen Moment in Anspruch nehmen.
+ein. Ersetzen Sie dabei den Platzhalter `<URL>` durch den eben kopierten Link.
+`curl -o archiv.tar.gz <URL>`  
+Das kann einen Moment in Anspruch nehmen.
 6. Entpacken Sie das Archiv mit folgedem Befehl:  
 `tar -xf archiv.tar.gz`
 7. Löschen Sie das Archiv mit:  
@@ -29,7 +29,9 @@ Dies kann einen Moment in Anspruch nehmen.
 
 8. Fügen Sie das JDK zu Ihrer PATH Umgebunsvariable mit folgendem Befehl hinzu:  
 `echo 'export PATH=$HOME/jdk-14.jdk/Contents/Home/bin:$PATH' >> ~/.bash_profile`
-9. Führen Sie folgenden Befehl aus, um die Umgebungsvariable zu laden:  
+9. JAVA_HOME Umgebungsvariable hinzufügen.  
+`echo 'export JAVA_HOME=$HOME/jdk-14.jdk/Contents/Home' >> ~/.bash_profile`
+10. Führen Sie folgenden Befehl aus, um die Umgebungsvariable zu laden:  
 `source ~/.bash_profile`.
 
 #### Test
