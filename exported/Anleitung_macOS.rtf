@@ -11,7 +11,7 @@
 {\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab \u214?ffnen Sie die Seite der aktuellen Version. Diese wird bei {\f1 Ready for use} genannt. (aktuell: JDK 14)\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Unter {\f1 Builds} finden Sie das Archiv zum Download. Klicken Sie mit der rechten Maustaste auf {\f1 tar.gz} hinter {\f1 macOS} und w\u228?hlen Sie {\f1 Link kopieren}.\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab \u214?ffnen Sie eine Termianl. Daf\u252?r \u246?ffnen Sie mit {\f1 Command + Leertaste} die Suche und geben Sie anschlie\u223?end {\f1 Terminal} ein. Best\u228?tigen Sie mit Enter. Geben Sie im Terminal {\f1 cd ~} ein und best\u228?tigen Sie mit Enter, um in das Homeverzeichnis zu wechseln.\line \par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 5.\tx360\tab Um das Archiv mit dem Commandline-Tool curl herunterzuladen geben Sie nun folgenden Konsolenbefehl ein. Ersetzen Sie dabei den Platzhalter {\f1 <URL>} durch den eben kopierten Link. {\f1 curl -o archiv.tar.gz <URL>}\line Das kann einen Moment in Anspruch nehmen.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 5.\tx360\tab Um das Archiv mit dem Commandline-Tool curl herunterzuladen geben Sie nun folgenden Konsolenbefehl ein. Ersetzen Sie dabei den Platzhalter {\f1 <URL>} durch den eben kopierten Link.\line {\f1 curl -o archiv.tar.gz <URL>}\line Das kann einen Moment in Anspruch nehmen.\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 6.\tx360\tab Entpacken Sie das Archiv mit folgedem Befehl:\line {\f1 tar -xf archiv.tar.gz}\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 7.\tx360\tab L\u246?schen Sie das Archiv mit:\line {\f1 rm archiv.tar.gz}\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 Umgebungsvariablen setzen\par}
@@ -36,32 +36,25 @@ OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \f1 Apache Ant(TM) version 1.10.7 compiled on September 1 2019\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 3. Artistic Style (astyle)\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 Herunterladen und entpacken\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Rufen Sie folgende Seite auf: https://sourceforge.net/projects/astyle/files/ . Klicken Sie auf {\f1 Download Latest Version}, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner zum Beispiel unter {\f1 Downloads}.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab \u214?ffnen Sie das die Datei {\f1 ASytle_3.1_windows.zip} mit einem Doppelklick. Das Archiv enth\u228?lt den Ordner {\f1 AStyle}. Entpacken Sie diesen in das Verzeichnis unter `C:. Gehen Sie dabei gleich vor, wie in den vorherigen Abschnitten.\sa180\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 Umgebungsvariablen setzen\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab \u214?ffnen Sie das Start-Menu und suchen Sie nach {\f1 Umgebungsvariablen}. W\u228?hlen Sie den Vorschlag {\f1 Umgebungsvariablen f\u252?r dieses Konto bearbeiten}. Es \u246?ffnet sich ein Fenster, in dem Sie die Umgebungsvariablen bearbeiten k\u246?nnen.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab W\u228?hlen Sie im Oberen Bereich die Variable {\f1 Path} aus und klicken Sie anschlie\u223?end auf {\f1 Bearbeiten}. Es \u246?ffnet sich ein weiteres Fenster, in dem Sie den Inhalt der Path-Variable bearbeiten k\u246?nnen.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 5.\tx360\tab Gehen Sie auf {\f1 Neu} und tragen Sie folgendes ein: {\f1 C:\\ASytle\\bin}. Klicken Sie auf {\f1 Ok}.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 6.\tx360\tab Klicken Sie auch im Fenster {\f1 Umgebungsvariablen} auf {\f1 Ok}.\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Um Astyle zu installieren wird der Paketmanager Homebrew (brew) ben\u246?tigt. Wenn Sie Homebrew bereits installiert haben k\u246?nnen Sie diesenS Schritt \u252?berspringen. Geben Sie folgendes Kommado in das Terminal ein:\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2>\line
+ /dev/null\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Geben Sie das Admin-Passwort ein, wenn Sie dazu aufgefordert werden. Dieser Schritt kann ein paar Minuten dauertn. 2. Wenn Sie Homebrew installiert haben k\u246?nnen Sie das Paket astyle installieren. F\u252?hren Sie folgenden Befehl aus: {\f1 bew install astyle}\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 Test\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 7.\tx360\tab Dr\u252?cken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster {\f1 Ausf\u252?hren} geben Sie {\f1 cmd} ein und best\u228?tigen mit Enter. Es \u246?ffnet sich die Konsole.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 8.\tx360\tab Geben Sie ein: {\f1 astyle --version}. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text:\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Geben Sie ein: {\f1 astyle --version}. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text:\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \f1 Artistic Style Version 3.1\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 4. checkstyle\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 Herunterladen und entpacken\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Rufen Sie folgende Seite auf: https://github.com/checkstyle/checkstyle/releases/ . Die aktuellste Version steht an oberster Stelle (momentan: 8.31). Klicken Sie unter {\f1 Assets} auf {\f1 checkstyle-8.31-all.jar}, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner zum Beispiel unter {\f1 Downloads}.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Legen Sie unter {\f1 C:\\} einen neuen Ordner mit den Namen {\f1 Checkstyle} an. Verschieben Sie die Datei {\f1 checkstyle-8.31-all.jar} aus {\f1 Downloads} in diesen neuen Ordner.\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab F\u252?hren Sie folgenden Befehl aus, um checkstyle mit Homebrew zu installieren: {\f1 bew install checkstyle}\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 Test\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Dr\u252?cken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster {\f1 Ausf\u252?hren} geben Sie {\f1 cmd} ein und best\u228?tigen mit Enter. Es \u246?ffnet sich die Konsole. Wechseln Sie in das Verzeichnis {\f1 Checkstyle} mit folgender Anweisung: {\f1 cd C:\\Checkstyle}\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab Geben Sie ein: {\f1 java -jar checkstyle-8.31-all.jar --version}. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text:\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Geben Sie ein: {\f1 checkstyle --version}. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text:\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \f1 Checkstyle version: 8.31\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 5. spotbugs\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 Herunterladen und entpacken\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Rufen Sie folgende Seite auf: https://spotbugs.readthedocs.io/en/stable/installing.html . Die Klicken Sie im ersten Abschnitt auf den Link {\f1 zip-format}, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner zum Beispiel unter {\f1 Downloads}.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab \u214?ffnen Sie das die Datei {\f1 spotbugs-4.0.1.zip} mit einem Doppelklick. Das Archiv enth\u228?lt den Ordner {\f1 spotbugs-4.0.1}. Entpacken Sie diesen Ordner nach {\f1 C:\\}.\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Gehen Sie auf https://github.com/spotbugs/spotbugs/releases und kopieren Sie den Link der momentan aktuellsten (Version 4.0.1) im {\f1 .tgz} Format.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Laden Sie das Archiv mit folgendem Befehl herunter und entpacken Sie es. Ersetzen Sie dabei {\f1 <URL>} durch den kopieten Link:\line {\f1 curl -o archiv.tgz -L <URL>}\line {\f1 tar -xf archiv.tgz}\line {\f1 rm archiv.tgz}\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 Test\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Dr\u252?cken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster {\f1 Ausf\u252?hren} geben Sie {\f1 cmd} ein und best\u228?tigen mit Enter. Es \u246?ffnet sich die Konsole.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab Geben Sie ein: {\f1 C:\\spotbugs-4.0.1\\bin\\spotbugs -help}. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text:\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Geben Sie ein: {\f1 java -jar ~/spotbugs-4.0.1/lib/spotbugs.jar -help}. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text:\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \f1 SpotBugs version 4.0.1, https://spotbugs.github.io/\line
 Command line options\line
 fb analyze                   Perform SpotBugs Analysis\line
@@ -82,21 +75,23 @@ General options:\line
   -jvmArgs args    Pass args to JVM\line
   -maxHeap size    Maximum Java heap size in megabytes (default=768)\line
   -javahome <dir>  Specify location of JRE\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 6. Notepad++\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 Herunterladen und entpacken\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Rufen Sie folgende Seite auf: https://notepad-plus-plus.org/downloads/ . Die aktuellste Version steht an oberster Stelle (momentan: 7.8.5). Klicken Sie unter {\f1 Download 64-bit x64} auf {\f1 zip-package}, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner zum Beispiel unter {\f1 Downloads}.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Klick Sie mit der rechten Maustaste auf die Datei {\f1 npp.7.8.5.bin.x64.zip}. W\u228?hlen Sie im Kontextmenu {\f1 Alle extrahieren}. Geben Sie nun im Textfeld {\f1 C:\\Notepad++} ein und klicken auf {\f1 Extrahieren}.\sa180\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 Umgebungsvariablen setzen\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab F\u252?gen Sie {\f1 C:\\Notepad++\\} zu Ihrer {\f1 Path} Umgebungsvariable hinzu. Gehen Sie dazu vor, wie in den vorherigen Abschnitten beschrieben.\sa180\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 Test\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab Dr\u252?cken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster {\f1 Ausf\u252?hren} geben Sie {\f1 cmd} ein und best\u228?tigen mit Enter. Es \u246?ffnet sich die Konsole. Geben Sie folgende Anweisung ein: {\f1 notepad++}. Der Editor sollte sich nun in einem neuen Fenster \u246?ffnen.\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 6. TODO: Editor installieren\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Kennenlernen der Programmierwerkzeuge - Einstiegsaufgabe\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Erstellen Sie ein Arbeitsverzeichnis um Ihre \u220?bungsaufgaben abzuspeichern. Legen Sie dieses Verzeichnis beispielsweise unter {\f1 C:\\} an und vergeb Sie den Namen {\f1 prog1-uebungen}.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Laden Sie das Archiv {\f1 Einstieg-zuhause.jar} unter dem Link www-home.htwg-konstanz.de/~drachen/prog1/Einstieg-zuhause.jar herunter und speichern Sie dieses in Ihrem Arbeitsverzeichnis.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Entpacken Sie das Archiv, in dem Sie eine Konsole \u246?ffnen und mit {\f1 cd C:\\prog1-uebungen} in Ihr Arbeitsverzeichnis wechseln. F\u252?hren Sie dann den Konsolenbefehl {\f1 jar xf Einstieg-zuhause.jar} aus.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab \u214?ffnen Sie die Datei build.xml in Notepad++ mit folgendem Befehl: {\f1 notepad++ build.xml}.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 5.\tx360\tab Passen Sie die Versionsnummer von Checkstyle an. \u196?ndern Sie daf\u252?r in Zeile 13 die Version {\f1 8.30} zu {\f1 8.31}, wenn Sie diese Version verwenden.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 6.\tx360\tab Wecheln Sie in der Konsole mit {\f1 cd einstieg} in den Ordner {\f1 einstieg}. Starten Sie in der Konsole den Editor Notepad++, indem Sie den folgenden Befehl eintippen {\f1 notepad++ Einstieg.java}. Geben Sie im Editor das folgende Programm ein. Beenden Sie den Editor und speichern Sie dabei Ihr Programm.\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Erstellen Sie ein Arbeitsverzeichnis um Ihre \u220?bungsaufgaben abzuspeichern.\line {\f1 mkdir prog1-uebungen}\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Laden Sie das Archiv {\f1 Einstieg-zuhause.jar} herunter und speichern Sie dieses in Ihrem Arbeitsverzeichnis.\line {\f1 curl -o prog1-uebungen/Einstieg-zuhause.jar www-home.htwg-konstanz.de/~drachen/prog1/Einstieg-zuhause.jar}\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Entpacken Sie das Archiv, in dem Sie eine Konsole \u246?ffnen und mit {\f1 cd prog1-uebungen} in Ihr Arbeitsverzeichnis wechseln. F\u252?hren Sie dann den Konsolenbefehl {\f1 jar xf Einstieg-zuhause.jar} aus.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab \u214?ffnen Sie die Datei build.xml in {\i Notepad++} mit folgendem Befehl: {\f1 *notepad++* build.xml}.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 5.\tx360\tab Passen Sie nun die Pfade und Version von Checkstyle und Spotbugs an. Nehem Sie die unten beschriebene \u196?nderungen vor. Ersetzen Sie dabei den Platzhalter {\f1 <USER>} durch Ihren Benutzernamen. Sie k\u246?nnen sich Ihren Benutzernamen mit dem Befehl {\f1 whoami} anzeigen lassen. \u196?ndern Sie folgende Zeilen von\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1     <property name="checkstyle.dir" value="c:/checkstyle/"/>\line
+    <property name="checkstyle.jar" value="$\{checkstyle.dir\}checkstyle-8.30-all.jar"/>\line
+\line
+    <property name="spotbugs.home" value="c:/spotbugs-4.0.1/"/>\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 zu\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1     <property name="checkstyle.dir" value="/usr/local/Cellar/checkstyle/8.31/libexec/"/>\line
+    <property name="checkstyle.jar" value="$\{checkstyle.dir\}checkstyle-8.31-all.jar"/>\line
+\line
+    <property name="spotbugs.home" value="/Users/<USER>/spotbugs-4.0.1/"/>\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 6.\tx360\tab Wecheln Sie im Terminal mit {\f1 cd einstieg} in den Ordner {\f1 einstieg}. Starten Sie in der Konsole den Editor Notepad++, indem Sie den folgenden Befehl eintippen {\f1 notepad++ Einstieg.java}. Geben Sie im Editor das folgende Programm ein. Beenden Sie den Editor und speichern Sie dabei Ihr Programm.\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \f1 //Einstieg.java\line
 package einstieg;\line
 \line
@@ -123,7 +118,7 @@ public final class Einstieg \{\line
      */\line
 \line
     public static void main(String[] args) \{\line
-        System.out.print("Vorname:");\line
+        System.out.print("Vorname: ");\line
         String vorname = EINGABE.next();\line
         \line
         System.out.print("Anzahl bisher geschriebener Java-Programme: ");\line
