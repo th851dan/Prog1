@@ -18,16 +18,17 @@ anschließend `Terminal` ein. Bestätigen Sie mit Enter. Geben Sie im Terminal `
 bestätigen Sie mit Enter, um in das Homeverzeichnis zu wechseln.  
 5. Um das Archiv mit dem Commandline-Tool curl herunterzuladen geben Sie nun folgenden Konsolenbefehl 
 ein. Ersetzen Sie dabei den Platzhalter <URL> durch den eben kopierten Link.
-`curl -o jdk.tar.gz <URL>`
+`curl -o archiv.tar.gz <URL>`
 Dies kann einen Moment in Anspruch nehmen.
 6. Entpacken Sie das Archiv mit folgedem Befehl:  
-`tar -xf jdk.tar.gz`
-7. Löschen Sie das Archiv mit: `rm jdk.tar.gz`
+`tar -xf archiv.tar.gz`
+7. Löschen Sie das Archiv mit:  
+`rm archiv.tar.gz`
 
 #### Umgebungsvariablen setzen
 
 8. Fügen Sie das JDK zu Ihrer PATH Umgebunsvariable mit folgendem Befehl hinzu:  
-`echo 'export PATH=$HOME/jdk-14.jdk/Contents/Home/bin/:$PATH' >> ~/.bash_profile`
+`echo 'export PATH=$HOME/jdk-14.jdk/Contents/Home/bin:$PATH' >> ~/.bash_profile`
 9. Führen Sie folgenden Befehl aus, um die Umgebungsvariable zu laden:  
 `source ~/.bash_profile`.
 
@@ -45,16 +46,24 @@ OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)
 #### Herunterladen und entpacken
 
 1. Rufen Sie folgende Seite auf: https://ant.apache.org/bindownload.cgi
-2. 
+2. Unter `Current Release of Ant` wird die aktuell Version genannt (momentan: 1.10.7). Klicken Sie mit
+der rechten Maustaste auf den Link mit der `.zip` Endung. Kopieren Sie den Link.
+3. Um das Archiv zu downloaden und zu entpacken führen Sie die folgenden drei Befehle aus. Vergessen Sie
+nicht, den Platzhalter <URL> durch den kopierten Link zu ersetzten.  
+`curl -o archiv.tar.gz <URL>`
+`tar -xf archiv.tar.gz`
+`rm archiv.tar.gz`
+
 #### Umgebungsvariablen setzen
 
-
+4. Fügen Sie Ant zu Ihrer PATH Umgebunsvariable mit folgendem Befehl hinzu:  
+`echo 'export PATH=$HOME/apache-ant-1.10.7/bin:$PATH' >> ~/.bash_profile`
+5. Führen Sie folgenden Befehl aus:  
+`source ~/.bash_profile`.
 
 #### Test
 
-8. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
-geben Sie `cmd` ein und bestätigen mit Enter.
-9. Geben Sie ein: `ant -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
+6. Geben Sie ein: `ant -version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
 Apache Ant(TM) version 1.10.7 compiled on September 1 2019
 ```
