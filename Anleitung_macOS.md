@@ -78,7 +78,8 @@ Apache Ant(TM) version 1.10.7 compiled on September 1 2019
 1. Um Astyle zu installieren wird der Paketmanager Homebrew (brew) benötigt. Wenn Sie Homebrew bereits
 installiert haben können Sie diesenS Schritt überspringen.
 Geben Sie folgendes Kommado in das Terminal ein:
-```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2>
+```sh
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2>
  /dev/null` 
 ```
 Geben Sie das Admin-Passwort ein, wenn Sie dazu aufgefordert werden. Dieser Schritt kann ein paar Minuten
@@ -164,14 +165,14 @@ Arbeitsverzeichnis wechseln. Führen Sie dann den Konsolenbefehl `jar xf Einstie
 Änderungen vor. Ersetzen Sie dabei den Platzhalter `<USER>` durch Ihren Benutzernamen. Sie können sich 
 Ihren Benutzernamen mit dem Befehl `whoami` anzeigen lassen.
 Ändern Sie folgende Zeilen von
-```
+```xml
     <property name="checkstyle.dir" value="c:/checkstyle/"/>
     <property name="checkstyle.jar" value="${checkstyle.dir}checkstyle-8.30-all.jar"/>
 
     <property name="spotbugs.home" value="c:/spotbugs-4.0.1/"/>
 ```
 zu
-```
+```xml
     <property name="checkstyle.dir" value="/usr/local/Cellar/checkstyle/8.31/libexec/"/>
     <property name="checkstyle.jar" value="${checkstyle.dir}checkstyle-8.31-all.jar"/>
 
