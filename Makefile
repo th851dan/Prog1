@@ -32,19 +32,19 @@ PANDOC_ODT_OPTIONS=
 # Pattern-matching Rules
 
 %.html : %.md
-	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_HTML_OPTIONS) -o $@ $<
+	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_HTML_OPTIONS) -o exported/$@ $<
 
 %.pdf : %.md
-	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_PDF_OPTIONS) -o $@ $<
+	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_PDF_OPTIONS) -o exported/$@ $<
 	
 %.docx : %.md
-	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_DOCX_OPTIONS) -o $@ $<
+	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_DOCX_OPTIONS) -o exported/$@ $<
 
 %.rtf : %.md
-	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_RTF_OPTIONS) -o $@ $<
+	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_RTF_OPTIONS) -o exported/$@ $<
 
 %.odt : %.md
-	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_ODT_OPTIONS) -o $@ $<
+	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_ODT_OPTIONS) -o exported/$@ $<
 
 # Targets and dependencies
 
@@ -53,4 +53,4 @@ PANDOC_ODT_OPTIONS=
 all : $(EXPORTED_DOCS)
 
 clean:
-	- $(RM) $(EXPORTED_DOCS)
+	- $(RM) exported/*
