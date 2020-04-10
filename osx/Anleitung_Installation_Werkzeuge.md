@@ -47,12 +47,12 @@ OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)
 
 1. Rufen Sie folgende Seite auf: https://ant.apache.org/bindownload.cgi
 2. Unter `Current Release of Ant` wird die aktuell Version genannt (momentan: 1.10.7). Klicken Sie mit
-der rechten Maustaste auf den Link mit der `.zip` Endung. Kopieren Sie den Link.
+der rechten Maustaste auf den Link mit der `.tar.gz` Endung. Kopieren Sie den Link.
 3. Um das Archiv zu downloaden und zu entpacken führen Sie die folgenden drei Befehle aus. Vergessen Sie
 nicht, den Platzhalter <URL> durch den kopierten Link zu ersetzten.  
-`curl -o archiv.tar.gz <URL>`
-`tar -xf archiv.tar.gz`
-`rm archiv.tar.gz`
+`curl -o archiv.tar.gz <URL>`  
+`tar -xf archiv.tar.gz`  
+`rm archiv.tar.gz`  
 
 #### Umgebungsvariablen setzen
 
