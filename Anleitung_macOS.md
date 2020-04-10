@@ -80,7 +80,7 @@ installiert haben können Sie diesenS Schritt überspringen.
 Geben Sie folgendes Kommado in das Terminal ein:
 ```sh
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2>
- /dev/null` 
+ /dev/null
 ```
 Geben Sie das Admin-Passwort ein, wenn Sie dazu aufgefordert werden. Dieser Schritt kann ein paar Minuten
 dauertn.
