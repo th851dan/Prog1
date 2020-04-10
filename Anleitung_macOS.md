@@ -112,12 +112,18 @@ Checkstyle version: 8.31
 
 #### Herunterladen und entpacken
 
-1. Führen Sie folgenden Befehl aus, um spotbugs mit Homebrew zu installieren:
-`bew install spotbugs`
+1. Gehen Sie auf https://github.com/spotbugs/spotbugs/releases und kopieren Sie den Link der momentan 
+aktuellsten (Version 4.0.1) im `.tgz` Format.
+2. Laden Sie das Archiv mit folgendem Befehl herunter und entpacken Sie es. Ersetzen Sie dabei `<URL>` 
+durch den kopieten Link:  
+`curl -o archiv.tgz -L <URL>`  
+`tar -xf archiv.tgz`  
+`rm archiv.tgz`
+
 
 #### Test
 
-2. Geben Sie ein: `spotbugs --help`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
+2. Geben Sie ein: `java -jar ~/spotbugs-4.0.1/lib/spotbugs.jar -help`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
 SpotBugs version 4.0.1, https://spotbugs.github.io/
 Command line options
@@ -154,12 +160,26 @@ Arbeitsverzeichnis.
 3. Entpacken Sie das Archiv, in dem Sie eine Konsole öffnen und mit `cd prog1-uebungen` in Ihr 
 Arbeitsverzeichnis wechseln. Führen Sie dann den Konsolenbefehl `jar xf Einstieg-zuhause.jar` aus.
 4. Öffnen Sie die Datei build.xml in *Notepad++* mit folgendem Befehl: `*notepad++* build.xml`.
-5. Passen Sie die Versionsnummer von Checkstyle an. Ändern Sie dafür in Zeile 13 die Version `8.30` zu 
-`8.31`, wenn Sie diese Version verwenden.
+5. Passen Sie nun die Pfade und Version von Checkstyle und Spotbugs an. Nehem Sie die unten beschriebene
+Änderungen vor. Ersetzen Sie dabei den Platzhalter `<USER>` durch Ihren Benutzernamen. Sie können sich 
+Ihren Benutzernamen mit dem Befehl `whoami` anzeigen lassen.
+Ändern Sie folgende Zeilen von
+```
+    <property name="checkstyle.dir" value="c:/checkstyle/"/>
+    <property name="checkstyle.jar" value="${checkstyle.dir}checkstyle-8.30-all.jar"/>
+
+    <property name="spotbugs.home" value="c:/spotbugs-4.0.1/"/>
+```
+zu
+```
+    <property name="checkstyle.dir" value="/usr/local/Cellar/checkstyle/8.31/libexec/"/>
+    <property name="checkstyle.jar" value="${checkstyle.dir}checkstyle-8.31-all.jar"/>
+
+    <property name="spotbugs.home" value="/Users/<USER>/spotbugs-4.0.1/"/>
+```
 6. Wecheln Sie im Terminal mit `cd einstieg` in den Ordner `einstieg`. Starten Sie in der Konsole den 
 Editor Notepad++, indem Sie den folgenden Befehl eintippen `notepad++ Einstieg.java`. Geben Sie im 
 Editor das folgende Programm ein. Beenden Sie den Editor und speichern Sie dabei Ihr Programm.
-
 ```java
 //Einstieg.java
 package einstieg;
