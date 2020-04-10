@@ -1,6 +1,6 @@
 # Anleitung Installation der Werkzeuge und Einstiegsaufgabe
 
-für macOS
+für macOS  
 Datum: 10.04.2020
 
 ## Installation 
