@@ -17,7 +17,7 @@ Datum: 10.04.2020
 anschließend `Terminal` ein. Bestätigen Sie mit Enter. Geben Sie im Terminal `cd ~` ein und 
 bestätigen Sie mit Enter, um in das Homeverzeichnis zu wechseln.  
 5. Um das Archiv mit dem Commandline-Tool curl herunterzuladen geben Sie nun folgenden Konsolenbefehl 
-ein. Ersetzen Sie dabei den Platzhalter `<URL>` durch den eben kopierten Link.
+ein. Ersetzen Sie dabei den Platzhalter `<URL>` durch den eben kopierten Link.  
 `curl -o archiv.tar.gz <URL>`  
 Das kann einen Moment in Anspruch nehmen.
 6. Entpacken Sie das Archiv mit folgedem Befehl:  
@@ -75,29 +75,26 @@ Apache Ant(TM) version 1.10.7 compiled on September 1 2019
 
 #### Herunterladen und entpacken
 
-1. Rufen Sie folgende Seite auf: https://sourceforge.net/projects/astyle/files/ . Klicken Sie auf 
-`Download Latest Version`, um den Download zu starten. Speichern Sie das Archiv auf Ihrem Rechner zum 
-Beispiel unter `Downloads`.
-2. Öffnen Sie das die Datei `ASytle_3.1_windows.zip` mit einem Doppelklick. Das Archiv enthält den 
-Ordner `AStyle`. Entpacken Sie diesen in das Verzeichnis unter `C:\. Gehen Sie dabei gleich vor, wie in 
-den vorherigen Abschnitten.
+1. Rufen Sie folgende Seite auf: [https://sourceforge.net/projects/astyle/files/astyle] . Klicken Sie 
+auf die akutellste Version (momentan 3.1). Klicken Sie mit der rechten Maustaste auf den Link mit der 
+`macos.tar.gz` Endung. Kopieren Sie den Link.
+2. Laden Sie das Archiv herunter und entpacken Sie es in Ihr Homeverzeichnis. Gehen Sie dabei vor, wie
+in den vorherigen Abschnitten beschrieben.
+3. Um aus den Source-Files eine Ausführbare Datei zu bauen, führen Sie folgende Befehle aus:  
+`cd astyle/build/mac`  
+`make`
+
 
 #### Umgebungsvariablen setzen
 
-3. Öffnen Sie das Start-Menu und suchen Sie nach `Umgebungsvariablen`. Wählen Sie den Vorschlag
-`Umgebungsvariablen für dieses Konto bearbeiten`. Es öffnet sich ein Fenster, in dem Sie die 
-Umgebungsvariablen bearbeiten können.
-4. Wählen Sie im Oberen Bereich die Variable `Path` aus und klicken Sie anschließend auf `Bearbeiten`. 
-Es öffnet sich ein weiteres Fenster, in dem Sie den Inhalt der Path-Variable bearbeiten können.
-5. Gehen Sie auf `Neu` und tragen Sie folgendes ein: `C:\ASytle\bin`. Klicken 
-Sie auf `Ok`.
-6. Klicken Sie auch im Fenster `Umgebungsvariablen` auf `Ok`.
+3. Fügen Sie Ant zu Ihrer PATH Umgebunsvariable mit folgendem Befehl hinzu:  
+`echo 'export PATH=$HOME/astyle/bin:$PATH' >> ~/.bash_profile`
+4. Führen Sie folgenden Befehl aus:  
+`source ~/.bash_profile`.
 
 #### Test
 
-7. Drücken Sie die die Tastenkombination Windows-Taste + R auf Ihrer Tastatur. Im Fenster `Ausführen` 
-geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Konsole.
-8. Geben Sie ein: `astyle --version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
+6. Geben Sie ein: `astyle --version`. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text: 
 ```
 Artistic Style Version 3.1
 ```
