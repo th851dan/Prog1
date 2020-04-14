@@ -83,10 +83,11 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
  /dev/null
 ```
 Geben Sie das Admin-Passwort ein, wenn Sie dazu aufgefordert werden. Dieser Schritt kann ein paar Minuten
-dauertn.
+dauern.
+
 2. Wenn Sie Homebrew installiert haben können Sie das Paket astyle installieren. Führen Sie folgenden
 Befehl aus:
-`bew install astyle`
+`brew install astyle`
 
 #### Test
 
@@ -100,7 +101,7 @@ Artistic Style Version 3.1
 #### Herunterladen und entpacken
 
 1. Führen Sie folgenden Befehl aus, um checkstyle mit Homebrew zu installieren:
-`bew install checkstyle`
+`brew install checkstyle`
 
 #### Test
 
@@ -149,7 +150,7 @@ General options:
 ```
 
 ### 6. TODO: Editor installieren
-
+	Hier wird Visual Studio Code empfohlen. Visual Studio Code  Es gibt aber sehr viele schönere
 
 ## Kennenlernen der Programmierwerkzeuge - Einstiegsaufgabe
 
@@ -160,7 +161,7 @@ Arbeitsverzeichnis.
 `curl -o prog1-uebungen/Einstieg-zuhause.jar www-home.htwg-konstanz.de/~drachen/prog1/Einstieg-zuhause.jar`
 3. Entpacken Sie das Archiv, in dem Sie eine Konsole öffnen und mit `cd prog1-uebungen` in Ihr 
 Arbeitsverzeichnis wechseln. Führen Sie dann den Konsolenbefehl `jar xf Einstieg-zuhause.jar` aus.
-4. Öffnen Sie die Datei build.xml in *Notepad++* mit folgendem Befehl: `*notepad++* build.xml`.
+4. Öffnen Sie die Datei build.xml in *Notepad++* mit folgendem Befehl: `notepad++ build.xml`.
 5. Passen Sie nun die Pfade und Version von Checkstyle und Spotbugs an. Nehem Sie die unten beschriebene
 Änderungen vor. Ersetzen Sie dabei den Platzhalter `<USER>` durch Ihren Benutzernamen. Sie können sich 
 Ihren Benutzernamen mit dem Befehl `whoami` anzeigen lassen.
