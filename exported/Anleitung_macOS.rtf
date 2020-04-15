@@ -39,13 +39,14 @@ OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Um Astyle zu installieren wird der Paketmanager Homebrew (brew) ben\u246?tigt. Wenn Sie Homebrew bereits installiert haben k\u246?nnen Sie diesenS Schritt \u252?berspringen. Geben Sie folgendes Kommado in das Terminal ein:\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \f1 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2>\line
  /dev/null\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Geben Sie das Admin-Passwort ein, wenn Sie dazu aufgefordert werden. Dieser Schritt kann ein paar Minuten dauertn. 2. Wenn Sie Homebrew installiert haben k\u246?nnen Sie das Paket astyle installieren. F\u252?hren Sie folgenden Befehl aus: {\f1 bew install astyle}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Geben Sie das Admin-Passwort ein, wenn Sie dazu aufgefordert werden. Dieser Schritt kann ein paar Minuten dauern.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Wenn Sie Homebrew installiert haben k\u246?nnen Sie das Paket astyle installieren. F\u252?hren Sie folgenden Befehl aus: {\f1 brew install astyle}\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 Test\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Geben Sie ein: {\f1 astyle --version}. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text:\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \f1 Artistic Style Version 3.1\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 4. checkstyle\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 Herunterladen und entpacken\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab F\u252?hren Sie folgenden Befehl aus, um checkstyle mit Homebrew zu installieren: {\f1 bew install checkstyle}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab F\u252?hren Sie folgenden Befehl aus, um checkstyle mit Homebrew zu installieren: {\f1 brew install checkstyle}\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 Test\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Geben Sie ein: {\f1 checkstyle --version}. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text:\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \f1 Checkstyle version: 8.31\par}
@@ -75,12 +76,18 @@ General options:\line
   -jvmArgs args    Pass args to JVM\line
   -maxHeap size    Maximum Java heap size in megabytes (default=768)\line
   -javahome <dir>  Specify location of JRE\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 6. TODO: Editor installieren\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 6. TextMate installieren\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Gehen Sie auf https://macromates.com und klicken Sie {\f1 Download TextMate 2.0} und warten Sie bis der Download fertig ist.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab \u214?ffnen Sie die heruntergeladene Datei. TextMate wird dann automatisch installiert.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Damit Sie TextMate im Terminal aufrufen k\u246?nnen, machen Sie folgendes: \u214?ffnen Sie TextMate. TextMate (Neben dem Apple-Symbol) -> Preferences -> Terminal: auf {\f1 install} klicken.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab Schlie\u223?en Sie TextMate und \u246?ffnen Sie ein Terminal zum Testen.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 5.\tx360\tab Geben Sie {\f1 mate} ein.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 6.\tx360\tab Falls Sie alles richtig gemacht haben, wird TextMate wieder ge\u246?ffnet.\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Kennenlernen der Programmierwerkzeuge - Einstiegsaufgabe\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Erstellen Sie ein Arbeitsverzeichnis um Ihre \u220?bungsaufgaben abzuspeichern.\line {\f1 mkdir prog1-uebungen}\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Laden Sie das Archiv {\f1 Einstieg-zuhause.jar} herunter und speichern Sie dieses in Ihrem Arbeitsverzeichnis.\line {\f1 curl -o prog1-uebungen/Einstieg-zuhause.jar www-home.htwg-konstanz.de/~drachen/prog1/Einstieg-zuhause.jar}\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Entpacken Sie das Archiv, in dem Sie eine Konsole \u246?ffnen und mit {\f1 cd prog1-uebungen} in Ihr Arbeitsverzeichnis wechseln. F\u252?hren Sie dann den Konsolenbefehl {\f1 jar xf Einstieg-zuhause.jar} aus.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab \u214?ffnen Sie die Datei build.xml in {\i Notepad++} mit folgendem Befehl: {\f1 *notepad++* build.xml}.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Entpacken Sie das Archiv, in dem Sie eine Konsole \u246?ffnen und mit {\f1 cd prog1-uebungen}\line in Ihr Arbeitsverzeichnis wechseln. F\u252?hren Sie dann den Konsolenbefehl {\f1 jar xf Einstieg-zuhause.jar} aus.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab \u214?ffnen Sie die Datei {\f1 build.xml} in TextMate mit folgendem Befehl: {\f1 mate build.xml}.\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 5.\tx360\tab Passen Sie nun die Pfade und Version von Checkstyle und Spotbugs an. Nehem Sie die unten beschriebene \u196?nderungen vor. Ersetzen Sie dabei den Platzhalter {\f1 <USER>} durch Ihren Benutzernamen. Sie k\u246?nnen sich Ihren Benutzernamen mit dem Befehl {\f1 whoami} anzeigen lassen. \u196?ndern Sie folgende Zeilen von\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \f1     <property name="checkstyle.dir" value="c:/checkstyle/"/>\line
     <property name="checkstyle.jar" value="$\{checkstyle.dir\}checkstyle-8.30-all.jar"/>\line
@@ -91,7 +98,7 @@ General options:\line
     <property name="checkstyle.jar" value="$\{checkstyle.dir\}checkstyle-8.31-all.jar"/>\line
 \line
     <property name="spotbugs.home" value="/Users/<USER>/spotbugs-4.0.1/"/>\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 6.\tx360\tab Wecheln Sie im Terminal mit {\f1 cd einstieg} in den Ordner {\f1 einstieg}. Starten Sie in der Konsole den Editor Notepad++, indem Sie den folgenden Befehl eintippen {\f1 notepad++ Einstieg.java}. Geben Sie im Editor das folgende Programm ein. Beenden Sie den Editor und speichern Sie dabei Ihr Programm.\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 6.\tx360\tab Wecheln Sie im Terminal mit {\f1 cd einstieg} in den Ordner {\f1 einstieg}. Starten Sie in der Konsole den Editor TextMate, indem Sie den folgenden Befehl eintippen {\f1 mate Einstieg.java}. Geben Sie im Editor das folgende Programm ein. Beenden Sie den Editor und speichern Sie dabei Ihr Programm.\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \f1 //Einstieg.java\line
 package einstieg;\line
 \line
@@ -129,8 +136,8 @@ public final class Einstieg \{\line
     \}\line
 \}\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 7.\tx360\tab \u220?bersetzen Sie Ihr Programm im Terminal mit dem Befehl {\f1 javac Einstieg.java}.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 8.\tx360\tab Wechseln Sie mit dem cd-Befehl in das Oberverzeichnis von einstieg/, also in das Arbeitsverzeichnis (auf die Leerstelle zwischen cd und .. achten): {\f1 cd ..}.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 8.\tx360\tab Wechseln Sie mit dem cd-Befehl in das Oberverzeichnis von {\f1 einstieg/}, also in das Arbeitsverzeichnis (auf die Leerstelle zwischen cd und .. achten): {\f1 cd ..} .\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 9.\tx360\tab Lassen Sie Ihr Programm laufen mit dem Befehl {\f1 java einstieg.Einstieg}. Das Programm fordert Sie auf, Ihren Vornamen sowie die Anzahl Ihrer bisher geschriebenen Java-Programme einzugeben, und gibt anschlie\u223?end einen Text aus.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 10.\tx360\tab Pr\u252?fen Siemit dem Werkzeug checkstyle, ob Sie in Ihrem Programm Stilregeln verletzt haben. Sie k\u246?nnen checkstyle \u252?ber das Automatisierungswerkzeug ant aufrufen: {\f1 ant -Dpackage=einstieg style}. Bessern Sie nach, falls checkstyle Stilverletzungen meldet und gehen Sie zur\u252?ck zu Schritt 7.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 11.\tx360\tab Erzeugen Sie HTML-Dokumentation zum Programm mit dem Befehl: {\f1 javadoc -html5 -d doc -linksource -author -version einstieg}. Betrachten Sie die Dokumentation. Im Dateimanager im neuen Unterverzeichnis doc/ die Datei index.html anklicken und dann die Links auf der angezeigten Seite weiterverfolgen, oder die Datei Lesezeichen.html im Arbeitsverzeichnis als Einstieg verwenden. Untersuchen Sie, welche Texte aus den .java-Dateien wo in den HTML-Seiten stehen.\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 10.\tx360\tab Pr\u252?fen Sie mit dem Werkzeug checkstyle, ob Sie in Ihrem Programm Stilregeln verletzt haben. Sie k\u246?nnen checkstyle \u252?ber das Automatisierungswerkzeug ant aufrufen:\line {\f1 ant -Dpackage=einstieg style}\line Bessern Sie nach, falls checkstyle Stilverletzungen meldet und gehen Sie zur\u252?ck zu Schritt 7.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 11.\tx360\tab Erzeugen Sie HTML-Dokumentation zum Programm mit dem Befehl:\line {\f1 javadoc -html5 -d doc -linksource -author -version einstieg}\line Betrachten Sie die Dokumentation. Im Dateimanager im neuen Unterverzeichnis doc/ die Datei index.html anklicken und dann die Links auf der angezeigten Seite weiterverfolgen, oder die Datei Lesezeichen.html im Arbeitsverzeichnis als Einstieg verwenden. Untersuchen Sie, welche Texte aus den .java-Dateien wo in den HTML-Seiten stehen.\sa180\par}
 }

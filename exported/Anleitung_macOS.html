@@ -141,7 +141,10 @@ OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)</code></pre>
 </ol>
 <div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="ex">ruby</span> -e <span class="st">&quot;</span><span class="va">$(</span><span class="ex">curl</span> -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="va">)</span><span class="st">&quot;</span> <span class="op">&lt;</span> /dev/null <span class="op">2&gt;</span></a>
 <a class="sourceLine" id="cb3-2" title="2"> <span class="ex">/dev/null</span></a></code></pre></div>
-<p>Geben Sie das Admin-Passwort ein, wenn Sie dazu aufgefordert werden. Dieser Schritt kann ein paar Minuten dauertn. 2. Wenn Sie Homebrew installiert haben können Sie das Paket astyle installieren. Führen Sie folgenden Befehl aus: <code>bew install astyle</code></p>
+<p>Geben Sie das Admin-Passwort ein, wenn Sie dazu aufgefordert werden. Dieser Schritt kann ein paar Minuten dauern.</p>
+<ol start="2" type="1">
+<li>Wenn Sie Homebrew installiert haben können Sie das Paket astyle installieren. Führen Sie folgenden Befehl aus: <code>brew install astyle</code></li>
+</ol>
 <h4 id="test-2">Test</h4>
 <ol start="3" type="1">
 <li>Geben Sie ein: <code>astyle --version</code>. Wenn Sie alles richtig gemacht haben erscheint nun folgender Text:</li>
@@ -150,7 +153,7 @@ OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)</code></pre>
 <h3 id="checkstyle">4. checkstyle</h3>
 <h4 id="herunterladen-und-entpacken-3">Herunterladen und entpacken</h4>
 <ol type="1">
-<li>Führen Sie folgenden Befehl aus, um checkstyle mit Homebrew zu installieren: <code>bew install checkstyle</code></li>
+<li>Führen Sie folgenden Befehl aus, um checkstyle mit Homebrew zu installieren: <code>brew install checkstyle</code></li>
 </ol>
 <h4 id="test-3">Test</h4>
 <ol start="2" type="1">
@@ -190,15 +193,24 @@ General options:
   -jvmArgs args    Pass args to JVM
   -maxHeap size    Maximum Java heap size in megabytes (default=768)
   -javahome &lt;dir&gt;  Specify location of JRE</code></pre>
-<h3 id="todo-editor-installieren">6. TODO: Editor installieren</h3>
+<h3 id="textmate-installieren">6. TextMate installieren</h3>
+<ol type="1">
+<li>Gehen Sie auf https://macromates.com und klicken Sie <code>Download TextMate 2.0</code> und warten Sie bis der Download fertig ist.</li>
+<li>Öffnen Sie die heruntergeladene Datei. TextMate wird dann automatisch installiert.</li>
+<li>Damit Sie TextMate im Terminal aufrufen können, machen Sie folgendes: Öffnen Sie TextMate. TextMate (Neben dem Apple-Symbol) -&gt; Preferences -&gt; Terminal: auf <code>install</code> klicken.</li>
+<li>Schließen Sie TextMate und öffnen Sie ein Terminal zum Testen.</li>
+<li>Geben Sie <code>mate</code> ein.</li>
+<li>Falls Sie alles richtig gemacht haben, wird TextMate wieder geöffnet.</li>
+</ol>
 <h2 id="kennenlernen-der-programmierwerkzeuge---einstiegsaufgabe">Kennenlernen der Programmierwerkzeuge - Einstiegsaufgabe</h2>
 <ol type="1">
 <li>Erstellen Sie ein Arbeitsverzeichnis um Ihre Übungsaufgaben abzuspeichern.<br />
 <code>mkdir prog1-uebungen</code></li>
 <li>Laden Sie das Archiv <code>Einstieg-zuhause.jar</code> herunter und speichern Sie dieses in Ihrem Arbeitsverzeichnis.<br />
 <code>curl -o prog1-uebungen/Einstieg-zuhause.jar www-home.htwg-konstanz.de/~drachen/prog1/Einstieg-zuhause.jar</code></li>
-<li>Entpacken Sie das Archiv, in dem Sie eine Konsole öffnen und mit <code>cd prog1-uebungen</code> in Ihr Arbeitsverzeichnis wechseln. Führen Sie dann den Konsolenbefehl <code>jar xf Einstieg-zuhause.jar</code> aus.</li>
-<li>Öffnen Sie die Datei build.xml in <em>Notepad++</em> mit folgendem Befehl: <code>*notepad++* build.xml</code>.</li>
+<li>Entpacken Sie das Archiv, in dem Sie eine Konsole öffnen und mit <code>cd prog1-uebungen</code><br />
+in Ihr Arbeitsverzeichnis wechseln. Führen Sie dann den Konsolenbefehl <code>jar xf Einstieg-zuhause.jar</code> aus.</li>
+<li>Öffnen Sie die Datei <code>build.xml</code> in TextMate mit folgendem Befehl: <code>mate build.xml</code>.</li>
 <li>Passen Sie nun die Pfade und Version von Checkstyle und Spotbugs an. Nehem Sie die unten beschriebene Änderungen vor. Ersetzen Sie dabei den Platzhalter <code>&lt;USER&gt;</code> durch Ihren Benutzernamen. Sie können sich Ihren Benutzernamen mit dem Befehl <code>whoami</code> anzeigen lassen. Ändern Sie folgende Zeilen von</li>
 </ol>
 <div class="sourceCode" id="cb7"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb7-1" title="1">    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;checkstyle.dir&quot;</span><span class="ot"> value=</span><span class="st">&quot;c:/checkstyle/&quot;</span><span class="kw">/&gt;</span></a>
@@ -211,7 +223,7 @@ General options:
 <a class="sourceLine" id="cb8-3" title="3"></a>
 <a class="sourceLine" id="cb8-4" title="4">    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;spotbugs.home&quot;</span><span class="ot"> value=</span><span class="st">&quot;/Users/</span><span class="er">&lt;</span><span class="st">USER&gt;/spotbugs-4.0.1/&quot;</span><span class="kw">/&gt;</span></a></code></pre></div>
 <ol start="6" type="1">
-<li>Wecheln Sie im Terminal mit <code>cd einstieg</code> in den Ordner <code>einstieg</code>. Starten Sie in der Konsole den Editor Notepad++, indem Sie den folgenden Befehl eintippen <code>notepad++ Einstieg.java</code>. Geben Sie im Editor das folgende Programm ein. Beenden Sie den Editor und speichern Sie dabei Ihr Programm.</li>
+<li>Wecheln Sie im Terminal mit <code>cd einstieg</code> in den Ordner <code>einstieg</code>. Starten Sie in der Konsole den Editor TextMate, indem Sie den folgenden Befehl eintippen <code>mate Einstieg.java</code>. Geben Sie im Editor das folgende Programm ein. Beenden Sie den Editor und speichern Sie dabei Ihr Programm.</li>
 </ol>
 <div class="sourceCode" id="cb9"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb9-1" title="1"><span class="co">//Einstieg.java</span></a>
 <a class="sourceLine" id="cb9-2" title="2"><span class="kw">package</span><span class="im"> einstieg;</span></a>
@@ -251,10 +263,14 @@ General options:
 <a class="sourceLine" id="cb9-36" title="36">}</a></code></pre></div>
 <ol start="7" type="1">
 <li>Übersetzen Sie Ihr Programm im Terminal mit dem Befehl <code>javac Einstieg.java</code>.</li>
-<li>Wechseln Sie mit dem cd-Befehl in das Oberverzeichnis von einstieg/, also in das Arbeitsverzeichnis (auf die Leerstelle zwischen cd und .. achten): <code>cd ..</code>.</li>
+<li>Wechseln Sie mit dem cd-Befehl in das Oberverzeichnis von <code>einstieg/</code>, also in das Arbeitsverzeichnis (auf die Leerstelle zwischen cd und .. achten): <code>cd ..</code> .</li>
 <li>Lassen Sie Ihr Programm laufen mit dem Befehl <code>java einstieg.Einstieg</code>. Das Programm fordert Sie auf, Ihren Vornamen sowie die Anzahl Ihrer bisher geschriebenen Java-Programme einzugeben, und gibt anschließend einen Text aus.</li>
-<li>Prüfen Siemit dem Werkzeug checkstyle, ob Sie in Ihrem Programm Stilregeln verletzt haben. Sie können checkstyle über das Automatisierungswerkzeug ant aufrufen: <code>ant -Dpackage=einstieg style</code>. Bessern Sie nach, falls checkstyle Stilverletzungen meldet und gehen Sie zurück zu Schritt 7.</li>
-<li>Erzeugen Sie HTML-Dokumentation zum Programm mit dem Befehl: <code>javadoc -html5 -d doc -linksource -author -version einstieg</code>. Betrachten Sie die Dokumentation. Im Dateimanager im neuen Unterverzeichnis doc/ die Datei index.html anklicken und dann die Links auf der angezeigten Seite weiterverfolgen, oder die Datei Lesezeichen.html im Arbeitsverzeichnis als Einstieg verwenden. Untersuchen Sie, welche Texte aus den .java-Dateien wo in den HTML-Seiten stehen.</li>
+<li>Prüfen Sie mit dem Werkzeug checkstyle, ob Sie in Ihrem Programm Stilregeln verletzt haben. Sie können checkstyle über das Automatisierungswerkzeug ant aufrufen:<br />
+<code>ant -Dpackage=einstieg style</code><br />
+Bessern Sie nach, falls checkstyle Stilverletzungen meldet und gehen Sie zurück zu Schritt 7.</li>
+<li>Erzeugen Sie HTML-Dokumentation zum Programm mit dem Befehl:<br />
+<code>javadoc -html5 -d doc -linksource -author -version einstieg</code><br />
+Betrachten Sie die Dokumentation. Im Dateimanager im neuen Unterverzeichnis doc/ die Datei index.html anklicken und dann die Links auf der angezeigten Seite weiterverfolgen, oder die Datei Lesezeichen.html im Arbeitsverzeichnis als Einstieg verwenden. Untersuchen Sie, welche Texte aus den .java-Dateien wo in den HTML-Seiten stehen.</li>
 </ol>
 </body>
 </html>
