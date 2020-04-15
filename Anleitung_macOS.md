@@ -83,10 +83,11 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
  /dev/null
 ```
 Geben Sie das Admin-Passwort ein, wenn Sie dazu aufgefordert werden. Dieser Schritt kann ein paar Minuten
-dauertn.
+dauern.
+
 2. Wenn Sie Homebrew installiert haben können Sie das Paket astyle installieren. Führen Sie folgenden
 Befehl aus:
-`bew install astyle`
+`brew install astyle`
 
 #### Test
 
@@ -100,7 +101,7 @@ Artistic Style Version 3.1
 #### Herunterladen und entpacken
 
 1. Führen Sie folgenden Befehl aus, um checkstyle mit Homebrew zu installieren:
-`bew install checkstyle`
+`brew install checkstyle`
 
 #### Test
 
@@ -148,8 +149,15 @@ General options:
   -javahome <dir>  Specify location of JRE
 ```
 
-### 6. TODO: Editor installieren
-
+### 6. TextMate installieren
+1. Gehen Sie auf https://macromates.com und klicken Sie ` Download TextMate 2.0` und warten Sie bis der Download fertig ist.
+2. Öffnen Sie die heruntergeladene Datei. TextMate wird dann automatisch installiert.
+3. Öffnen Sie TextMate.
+4. Damit Sie TextMate im Terminal aufrufen können, machen Sie folgendes: 
+	Textmate(Neben dem Apple-Symbol) -> Preferences -> Terminal: auf `install`klicken
+5. Schließen Sie TextMate und öffnen Sie Terminal zum Testen.
+6. Geben Sie `mate` ein.
+7. Falls Sie alles richtig gemacht haben, wird TextMate wieder geöffnet.
 
 ## Kennenlernen der Programmierwerkzeuge - Einstiegsaufgabe
 
@@ -160,7 +168,7 @@ Arbeitsverzeichnis.
 `curl -o prog1-uebungen/Einstieg-zuhause.jar www-home.htwg-konstanz.de/~drachen/prog1/Einstieg-zuhause.jar`
 3. Entpacken Sie das Archiv, in dem Sie eine Konsole öffnen und mit `cd prog1-uebungen` in Ihr 
 Arbeitsverzeichnis wechseln. Führen Sie dann den Konsolenbefehl `jar xf Einstieg-zuhause.jar` aus.
-4. Öffnen Sie die Datei build.xml in *Notepad++* mit folgendem Befehl: `*notepad++* build.xml`.
+4. Öffnen Sie die Datei build.xml in *TextMate* mit folgendem Befehl: `mate build.xml`.
 5. Passen Sie nun die Pfade und Version von Checkstyle und Spotbugs an. Nehem Sie die unten beschriebene
 Änderungen vor. Ersetzen Sie dabei den Platzhalter `<USER>` durch Ihren Benutzernamen. Sie können sich 
 Ihren Benutzernamen mit dem Befehl `whoami` anzeigen lassen.
@@ -179,7 +187,7 @@ zu
     <property name="spotbugs.home" value="/Users/<USER>/spotbugs-4.0.1/"/>
 ```
 6. Wecheln Sie im Terminal mit `cd einstieg` in den Ordner `einstieg`. Starten Sie in der Konsole den 
-Editor Notepad++, indem Sie den folgenden Befehl eintippen `notepad++ Einstieg.java`. Geben Sie im 
+Editor TextMate, indem Sie den folgenden Befehl eintippen `mate Einstieg.java`. Geben Sie im 
 Editor das folgende Programm ein. Beenden Sie den Editor und speichern Sie dabei Ihr Programm.
 ```java
 //Einstieg.java
@@ -226,7 +234,7 @@ public final class Einstieg {
 9. Lassen Sie Ihr Programm laufen mit dem Befehl `java einstieg.Einstieg`. Das Programm fordert Sie auf, 
 Ihren Vornamen sowie die Anzahl Ihrer bisher geschriebenen Java-Programme einzugeben, und gibt 
 anschließend einen Text aus.
-10. Prüfen Siemit dem Werkzeug checkstyle, ob Sie in Ihrem Programm Stilregeln verletzt haben. Sie 
+10. Prüfen Sie mit dem Werkzeug checkstyle, ob Sie in Ihrem Programm Stilregeln verletzt haben. Sie 
 können checkstyle über das Automatisierungswerkzeug ant aufrufen: `ant -Dpackage=einstieg style`.
 Bessern Sie nach, falls checkstyle Stilverletzungen meldet und gehen Sie zurück zu Schritt 7.
 11. Erzeugen Sie HTML-Dokumentation zum Programm mit dem Befehl: 
