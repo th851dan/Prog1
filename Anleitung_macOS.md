@@ -157,6 +157,13 @@ General options:
 6. Geben Sie `mate` ein.
 7. Falls Sie alles richtig gemacht haben, wird TextMate wieder geöffnet.
 
+### 7. meld installieren
+1. Führen Sie folgenden Befehl aus, um `meld` mit Homebrew zu installieren:
+`brew cask install meld`
+2. Öffnen Sie `meld` zum ersten Mal, indem Sie `meld` im Terminal eingeben oder mit der Kombinationstaste `Command + Leerzeichen` nach `meld` suchen. Falls `meld` nicht geöffnet wurde, führen Sie Schritt 3.
+3. Klicken Sie auf den Apple-Zeichen(oben links) -> Systemeinstellungen -> Sicherheit -> `meld` erlauben -> Öffnen
+4. Danach sollten Sie `meld` wie im Schritt 2 behandelt wurde öffnen.
+
 ## Kennenlernen der Programmierwerkzeuge - Einstiegsaufgabe
 
 1. Erstellen Sie ein Arbeitsverzeichnis um Ihre Übungsaufgaben abzuspeichern.  
