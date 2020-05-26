@@ -208,6 +208,16 @@ Im Fenster `Ausführen` geben Sie `cmd` ein und bestätigen mit Enter. Es öffne
 sich die Konsole. Geben Sie folgende Anweisung ein: `notepad++`. Der Editor
 sollte sich nun in einem neuen Fenster öffnen.
 
+#### Compare Plugin Installieren
+
+5. Öffnen Sie Notepad++. Wählen Sie in der Menüleiste `Plugins` ->
+   `Plugins Admin...`. Es öffnet sich ein Fenster. Suchen Sie nach dem Plugin
+   `Compare`. Setzen Sie das Häkchen bei diesem Plugin und klicken Sie rechts
+   oben auf `Install`. Bestätigen Sie mit `Ja`, eventuell benötigen Sie Admin-
+   Rechte.
+6. Wenn die Installation funktioniert hat sollten Sie nun in Notepad++ in der
+   Menüleiste unter `Plugins` den Eintrag `Compare` finden.
+
 ### 7. DiffUtils
 
 #### Herunterladen und installieren
