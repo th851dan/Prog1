@@ -152,10 +152,8 @@ General options:
 ### 6. TextMate installieren
 1. Gehen Sie auf https://macromates.com und klicken Sie ` Download TextMate 2.0` und warten Sie bis der Download fertig ist.
 2. Öffnen Sie die heruntergeladene Datei. TextMate wird dann automatisch installiert.
-3. Öffnen Sie TextMate.
-4. Damit Sie TextMate im Terminal aufrufen können, machen Sie folgendes: 
-	Textmate(Neben dem Apple-Symbol) -> Preferences -> Terminal: auf `install`klicken
-5. Schließen Sie TextMate und öffnen Sie Terminal zum Testen.
+3. Damit Sie TextMate im Terminal aufrufen können, machen Sie folgendes: Öffnen Sie TextMate. TextMate (Neben dem Apple-Symbol) -> Preferences -> Terminal: auf `install` klicken.
+5. Schließen Sie TextMate und öffnen Sie ein Terminal zum Testen.
 6. Geben Sie `mate` ein.
 7. Falls Sie alles richtig gemacht haben, wird TextMate wieder geöffnet.
 
@@ -166,9 +164,9 @@ General options:
 2. Laden Sie das Archiv `Einstieg-zuhause.jar` herunter und speichern Sie dieses in Ihrem 
 Arbeitsverzeichnis.  
 `curl -o prog1-uebungen/Einstieg-zuhause.jar www-home.htwg-konstanz.de/~drachen/prog1/Einstieg-zuhause.jar`
-3. Entpacken Sie das Archiv, in dem Sie eine Konsole öffnen und mit `cd prog1-uebungen` in Ihr 
-Arbeitsverzeichnis wechseln. Führen Sie dann den Konsolenbefehl `jar xf Einstieg-zuhause.jar` aus.
-4. Öffnen Sie die Datei build.xml in *TextMate* mit folgendem Befehl: `mate build.xml`.
+3. Entpacken Sie das Archiv, in dem Sie eine Konsole öffnen und mit `cd prog1-uebungen`  
+in Ihr Arbeitsverzeichnis wechseln. Führen Sie dann den Konsolenbefehl `jar xf Einstieg-zuhause.jar` aus.
+4. Öffnen Sie die Datei `build.xml` in TextMate mit folgendem Befehl: `mate build.xml`.
 5. Passen Sie nun die Pfade und Version von Checkstyle und Spotbugs an. Nehem Sie die unten beschriebene
 Änderungen vor. Ersetzen Sie dabei den Platzhalter `<USER>` durch Ihren Benutzernamen. Sie können sich 
 Ihren Benutzernamen mit dem Befehl `whoami` anzeigen lassen.
@@ -229,17 +227,18 @@ public final class Einstieg {
 ```
 
 7. Übersetzen Sie Ihr Programm im Terminal mit dem Befehl `javac Einstieg.java`.
-8. Wechseln Sie mit dem cd-Befehl in das Oberverzeichnis von einstieg/, also in das Arbeitsverzeichnis 
-(auf die Leerstelle zwischen cd und .. achten): `cd ..`.
+8. Wechseln Sie mit dem cd-Befehl in das Oberverzeichnis von `einstieg/`, also in das Arbeitsverzeichnis 
+(auf die Leerstelle zwischen cd und .. achten): `cd ..` .
 9. Lassen Sie Ihr Programm laufen mit dem Befehl `java einstieg.Einstieg`. Das Programm fordert Sie auf, 
 Ihren Vornamen sowie die Anzahl Ihrer bisher geschriebenen Java-Programme einzugeben, und gibt 
 anschließend einen Text aus.
 10. Prüfen Sie mit dem Werkzeug checkstyle, ob Sie in Ihrem Programm Stilregeln verletzt haben. Sie 
-können checkstyle über das Automatisierungswerkzeug ant aufrufen: `ant -Dpackage=einstieg style`.
+können checkstyle über das Automatisierungswerkzeug ant aufrufen:  
+`ant -Dpackage=einstieg style`  
 Bessern Sie nach, falls checkstyle Stilverletzungen meldet und gehen Sie zurück zu Schritt 7.
-11. Erzeugen Sie HTML-Dokumentation zum Programm mit dem Befehl: 
-`javadoc -html5 -d doc -linksource -author -version einstieg`. Betrachten Sie die Dokumentation. Im 
-Dateimanager im neuen Unterverzeichnis doc/ die Datei index.html anklicken und dann die Links auf der 
-angezeigten Seite weiterverfolgen, oder die Datei Lesezeichen.html im Arbeitsverzeichnis als Einstieg 
-verwenden. Untersuchen Sie, welche Texte aus den .java-Dateien wo in den HTML-Seiten stehen.
-
+11. Erzeugen Sie HTML-Dokumentation zum Programm mit dem Befehl:  
+`javadoc -html5 -d doc -linksource -author -version einstieg`  
+Betrachten Sie die Dokumentation. Im Dateimanager im neuen Unterverzeichnis doc/ die Datei index.html 
+anklicken und dann die Links auf der angezeigten Seite weiterverfolgen, oder die Datei Lesezeichen.html 
+im Arbeitsverzeichnis als Einstieg verwenden. Untersuchen Sie, welche Texte aus den .java-Dateien wo 
+in den HTML-Seiten stehen.
