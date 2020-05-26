@@ -188,6 +188,20 @@ vorherigen Abschnitten beschrieben.
 geben Sie `cmd` ein und bestätigen mit Enter. Es öffnet sich die Konsole. Geben Sie folgende Anweisung 
 ein: `notepad++`. Der Editor sollte sich nun in einem neuen Fenster öffnen.
 
+### 7. DiffUtils
+
+#### Herunterladen und installieren
+
+1. Rufen Sie die Seite http://gnuwin32.sourceforge.net/downlinks/diffutils.php auf. Der Download sollte
+nach wenigen Sekunden von selbst starten. Speichern Sie die Datei unter dem Namen `diffutils-2.8.7-1.exe`
+im Ordner `Downloads` ab.
+2. Führen Sie die Datei mit einem Doppelklick aus. Eventuell benötigen Sie dafür Admin-Rechte. Es öffnet
+sich der Installer. Klicken Sie sich mit `next` durch den Installer. Sie brauchen keine Anpassungen vorzunehmen. Klicken Sie schließlich auf `Install` um die Installation abzuschließen.
+
+#### Test
+
+Öffnen Sie eine neue Console. Geben Sie ein: `diff -v`. Sie sollten nun folgende Ausgabe sehe:
+`diff - GNU diffutils version 2.7`
 
 ## Kennenlernen der Programmierwerkzeuge - Einstiegsaufgabe
 
